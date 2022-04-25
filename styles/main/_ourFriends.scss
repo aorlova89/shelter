@@ -1,0 +1,126 @@
+@import "../common/colors";
+@import "../common/text_styles";
+
+.our-friends{
+  position: absolute;
+  height: 877px;
+  left: 0;
+  right: 0;
+  top: 1496px;
+  background: $color-light-l;
+
+  .our-friends-btn {
+    position: absolute;
+    height: 52px;
+    left: 468px;
+    top: 644px;
+  }
+}
+
+.our-friends-content{
+  height: 697px;
+  top: 80px;
+
+  h3 {
+    position: absolute;
+    width: 400px;
+    height: 90px;
+    left: 400px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $color-dark-l;
+  }
+
+}
+
+.our-friends-slider{
+  position: absolute;
+  width: 1200px;
+  height: 435px;
+  left: 0;
+  top: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.friends {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card{
+  width: 270px;
+  height: 435px;
+
+  background: $color-light-s;
+  border-radius: 9px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  .btn-secondary {
+    position: absolute;
+    top: 353px;
+  }
+
+}
+
+.card:hover {
+  background: $color-light-xl;
+  .btn-secondary {
+    background: $color-primary-light;
+    border-color: $color-primary-light;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+
+.pet-name{
+  width: 74px;
+  height: 23px;
+
+  position: absolute;
+  top: 300px;
+
+  /* pets-card-title */
+  font-family: 'Georgia', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: $color-dark-l;
+}
+
+div#katrine .pet-img{
+  background: url("../../assets/images/pets-katrine.png") no-repeat;
+  height: 270px;
+  width: 270px;
+  border-radius: 9px 9px 0 0;
+}
+
+div#jennifer .pet-img{
+  background: url("../../assets/images/pets-jennifer.png") no-repeat;
+  height: 270px;
+  width: 270px;
+  border-radius: 9px 9px 0 0;
+}
+
+div#woody .pet-img{
+  background: url("../../assets/images/pets-woody.png") no-repeat;
+  height: 270px;
+  width: 270px;
+  border-radius: 9px 9px 0 0;
+}

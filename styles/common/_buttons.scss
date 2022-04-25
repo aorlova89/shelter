@@ -1,0 +1,44 @@
+@import "colors";
+@import "text_styles";
+
+.primary-btn{
+  padding: 15px 45px;
+
+  background: $color-primary;
+  border-radius: 100px;
+  border-color: $color-primary;
+  border-style: solid;
+
+  font-family: 'Georgia', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+
+  letter-spacing: 0.06em;
+
+  color: $color-dark-3xl;
+}
+
+.arrow-btn{
+  border: none;
+  background: $color-light-l;
+}
+
+.left-arrow{
+  background: url("../../assets/icons/button_arrow.png") no-repeat top left;
+  background-size: contain;
+  cursor: pointer;
+  display: inline-block;
+  height: 52px;
+  width: 52px;
+}
+
+.right-arrow {
+  background: url("../../assets/icons/button_arrow.png") no-repeat top left;
+  background-size: contain;
+  cursor: pointer;
+  display: inline-block;
+  height: 52px;
+  width: 52px;
+  transform: rotate(180deg);
+}
