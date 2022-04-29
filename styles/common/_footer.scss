@@ -1,5 +1,5 @@
-@import "colors";
-@import "text_styles";
+@use "colors";
+
 
 footer {
   background-image: url("../../assets/images/start-screen-background.jpg");
@@ -33,7 +33,7 @@ footer {
       left: calc(50% - 278px/2 - 0px);
       top: 0;
 
-      color: $color-light-xl;
+      color: colors.$color-light-xl;
     }
 
     .email{
@@ -70,8 +70,6 @@ footer {
         top: 4px;
       }
     }
-
-
   }
 
   .locations {
@@ -88,14 +86,14 @@ footer {
       left: calc(50% - 270px/2 - 15px);
       top: 0;
 
-      color: $color-light-xl;
+      color: colors.$color-light-xl;
     }
 
     .boston {
       position: absolute;
       width: 302px;
       height: 46px;
-      left: 0px;
+      left: 0;
       top: 130px;
 
       display: flex;
@@ -113,7 +111,7 @@ footer {
       position: absolute;
       width: 302px;
       height: 32px;
-      left: 0px;
+      left: 0;
       top: 202px;
 
       display: flex;
@@ -124,7 +122,6 @@ footer {
         height: 23px;
         left: calc(50% - 260px/2 + 21px);
         top: 5px;
-
       }
     }
   }
@@ -158,4 +155,7 @@ footer {
   background: url("../../assets/images/footer-puppy.png");
 }
 
-
+a {
+  text-decoration: none;
+  color: colors.$color-primary;
+}

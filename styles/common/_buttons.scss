@@ -1,44 +1,52 @@
-@import "colors";
-@import "text_styles";
+@use "colors";
 
-.primary-btn{
-  padding: 15px 45px;
 
-  background: $color-primary;
-  border-radius: 100px;
-  border-color: $color-primary;
-  border-style: solid;
-
+button {
   font-family: 'Georgia', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
-
   letter-spacing: 0.06em;
 
-  color: $color-dark-3xl;
+  border: 2px solid colors.$color-primary;
+  border-radius: 100px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.arrow-btn{
-  border: none;
-  background: $color-light-l;
-}
-
-.left-arrow{
-  background: url("../../assets/icons/button_arrow.png") no-repeat top left;
-  background-size: contain;
+button:hover {
+  background-color: colors.$color-primary-light;
+  border-color: colors.$color-primary-light;
   cursor: pointer;
-  display: inline-block;
-  height: 52px;
+}
+
+.primary-btn{
+  padding: 15px 45px;
+  background: colors.$color-primary;
+  color: colors.$color-dark-3xl;
+}
+
+.secondary-btn{
+  padding: 15px 45px;
+  background: colors.$color-light-s;
+  color: colors.$color-dark-3xl;
+  line-height: 130%;
+}
+
+.navigation-btn {
   width: 52px;
+  height: 52px;
+
+  font-size: 20px;
+  line-height: 115%;
+}
+
+.left-arrow {
+  background: url("../../assets/icons/arrow.png") no-repeat center center;
 }
 
 .right-arrow {
-  background: url("../../assets/icons/button_arrow.png") no-repeat top left;
-  background-size: contain;
-  cursor: pointer;
-  display: inline-block;
-  height: 52px;
-  width: 52px;
+  background: url("../../assets/icons/arrow.png") no-repeat center center;
   transform: rotate(180deg);
+  filter: drop-shadow(0px -4px 4px rgba(0, 0, 0, 0.25));
 }

@@ -1,0 +1,66 @@
+@use "colors";
+
+
+.card{
+  width: 270px;
+  height: 435px;
+
+  background: colors.$color-light-s;
+  border-radius: 9px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  .secondary-btn {
+    margin-bottom: 23px;
+  }
+}
+
+.card:hover {
+  background: colors.$color-light-xl;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  .secondary-btn {
+    background: colors.$color-primary-light;
+    border-color: colors.$color-primary-light;
+  }
+}
+
+.pet-name{
+  width: 74px;
+  height: 23px;
+  margin-top: 8px;
+
+  font-family: 'Georgia', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: colors.$color-dark-l;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.pet-img {
+  height: 270px;
+  width: 270px;
+  border-radius: 9px 9px 0 0;
+}
+
+div#katrine .pet-img{
+  background: url("../../assets/images/pets-katrine.png") no-repeat;
+}
+
+div#jennifer .pet-img{
+  background: url("../../assets/images/pets-jennifer.png") no-repeat;
+}
+
+div#woody .pet-img{
+  background: url("../../assets/images/pets-woody.png") no-repeat;
+}

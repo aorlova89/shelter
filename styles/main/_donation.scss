@@ -1,5 +1,5 @@
-@import "../common/colors";
-@import "../common/text_styles";
+@use "../common/colors";
+
 
 .donation{
   position: absolute;
@@ -8,7 +8,7 @@
   right: 0;
   top: 2984px;
 
-  background: $color-light-l;
+  background: colors.$color-light-l;
 }
 
 .donation-content{
@@ -27,7 +27,7 @@
 
     display: flex;
     align-items: center;
-    color: $color-dark-l;
+    color: colors.$color-dark-l;
   }
 
   h4{
@@ -37,7 +37,7 @@
     display: flex;
     align-items: center;
     letter-spacing: 0.06em;
-    color: $color-dark-l;
+    color: colors.$color-dark-l;
   }
 
   h5{
@@ -47,7 +47,7 @@
     top: 110px;
     display: flex;
     align-items: center;
-    color: $color-dark-l;
+    color: colors.$color-dark-l;
   }
 
   span{
@@ -66,7 +66,12 @@
     display: flex;
     align-items: center;
 
-    color: $color-dark-m;
+    color: colors.$color-dark-m;
+  }
+
+  a {
+    text-decoration: none;
+    color: colors.$color-dark-l;
   }
 }
 
@@ -98,8 +103,14 @@
   left: 0;
   top: 147px;
 
-  background: $color-primary;
+  background: colors.$color-primary;
   border-radius: 9px;
+}
+
+.credit-card:hover {
+  background: colors.$color-primary-light;
+  border-color: colors.$color-primary-light;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .credit-card-icon{

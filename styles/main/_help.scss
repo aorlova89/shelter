@@ -1,5 +1,5 @@
-@import "../common/colors";
-@import "../common/text_styles";
+@use "../common/colors";
+
 
 .help {
   position: absolute;
@@ -8,7 +8,7 @@
   right: 0;
   top: 2373px;
 
-  background: $color-light-xl;
+  background: colors.$color-light-xl;
 }
 
 .help-content{
@@ -26,7 +26,7 @@
     align-items: center;
     text-align: center;
 
-    color: $color-dark-l;
+    color: colors.$color-dark-l;
   }
 }
 
@@ -35,7 +35,7 @@
   width: 1026px;
   height: 336px;
   left: 87px;
-  top: 142px;
+  top: 150px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -51,7 +51,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: $color-dark-l;
+    color: colors.$color-dark-l;
   }
 
   h4{
@@ -60,22 +60,48 @@
     text-align: center;
     letter-spacing: 0.06em;
 
-    color: $color-dark-l;
+    color: colors.$color-dark-l;
   }
 }
 
 .help-item{
   width: 205px;
-  height: 113px;
+  height: 114px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .help-img {
+    width: 60px;
+    height: 60px;
   }
 }
 
+div#food .help-img{
+  background: url("./../../assets/icons/icon-pet-food.svg") no-repeat;
+}
+div#transportation .help-img{
+  background: url("./../../assets/icons/icon-transportation.svg") no-repeat;
+}
+div#toys .help-img{
+  background: url("./../../assets/icons/icon-toys.svg") no-repeat;
+}
+div#bowls-and-cups .help-img{
+  background: url("./../../assets/icons/icon-bowls-and-cups.svg") no-repeat;
+}
+div#shampoos .help-img{
+  background: url("./../../assets/icons/icon-shampoos.svg") no-repeat;
+}
+div#vitamins .help-img{
+  background: url("./../../assets/icons/icon-vitamins.svg") no-repeat;
+}
+div#medicines .help-img{
+  background: url("./../../assets/icons/icon-medicines.svg") no-repeat;
+}
+div#collars-and-lashes .help-img{
+  background: url("./../../assets/icons/icon-collars-leashes.svg") no-repeat;
+}
+div#sleeping-areas .help-img{
+  background: url("./../../assets/icons/icon-sleeping-area.svg") no-repeat;
+}
