@@ -40,6 +40,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  column-gap: 64px;
 
   h3{
     position: absolute;
@@ -65,7 +66,7 @@
 }
 
 .help-item{
-  width: 205px;
+  width: 154px;
   height: 114px;
   display: flex;
   flex-direction: column;
