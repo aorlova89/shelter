@@ -1,0 +1,19 @@
+@import "../../../styles/common/normalize";
+
+@import "../../../styles/common/text_styles";
+@import "../../../styles/common/buttons";
+@import "../../../styles/common/card";
+
+@import "header";
+@import "startScreen";
+@import "about";
+@import "ourFriends";
+@import "help";
+@import "donation";
+@import "footer";
+
+
+.center-aligned {
+  width: 1200px;
+  margin: auto;
+}

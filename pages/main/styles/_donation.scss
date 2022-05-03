@@ -1,0 +1,79 @@
+@use "../../../styles/common/colors";
+
+
+.donation{
+  height: 462px;
+  background: colors.$color-light-l;
+}
+
+.donation-content{
+  padding: 80px 166px 100px 142px;
+  display: flex;
+
+  h3{
+    margin: 0;
+    width: 90%;
+    color: colors.$color-dark-l;
+  }
+
+  h4{
+    margin: 0;
+
+    letter-spacing: 0.06em;
+    color: colors.$color-dark-l;
+  }
+
+  h5{
+    margin-top: 20px;
+    align-items: center;
+    color: colors.$color-dark-l;
+  }
+
+  span{
+    font-family: 'Arial', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: colors.$color-dark-m;
+  }
+
+  a {
+    text-decoration: none;
+    color: colors.$color-dark-l;
+  }
+}
+
+.donation-dog{
+  margin-top: 10px;
+  height: 261px;
+  width: 60%;
+  background: url("../../../assets/images/donation-dog.png") no-repeat;
+}
+
+.donation-content-text{
+  width: 40%;
+}
+
+.credit-card{
+  display: flex;
+  align-items: center;
+  padding: 7px 15px;
+  width: 90%;
+
+  background: colors.$color-primary;
+  border-radius: 9px;
+}
+
+.credit-card:hover {
+  background: colors.$color-primary-light;
+  border-color: colors.$color-primary-light;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.credit-card-icon{
+  margin-right: 10px;
+  background: url("../../../assets/icons/credit-card.svg");
+  width: 30px;
+  height: 23px;
+}

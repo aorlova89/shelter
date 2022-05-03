@@ -36,14 +36,11 @@ main {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-//
-h1 {
-  font-size: 2em;
-}
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p {
+h1 {
+  //font-size: 2em;
   margin: 0;
+  //margin: 0.67em 0;
 }
 
 /* Grouping content
@@ -55,9 +52,9 @@ h1, h2, h3, h4, h5, h6, p {
  */
 
 hr {
-  //box-sizing: content-box; /* 1 */
-  //height: 0; /* 1 */
-  //overflow: visible; /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**

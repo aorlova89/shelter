@@ -3,31 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Shelter</title>
-    <link rel="stylesheet" href="../../styles/main/style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
 <div class="content-wrapper">
     <div class="start-screen">
         <header class="center-aligned">
-            <div class="shelter-logo">
-                <h1 class="logo-title">Cozy house</h1>
-                <div class="logo-subtitle">Shelter for pets in Boston</div>
+            <div class="header-content">
+                <div class="shelter-logo">
+                    <h1 class="logo-title">Cozy house</h1>
+                    <div class="logo-subtitle">Shelter for pets in Boston</div>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li>
+                            <a class="nav-menu-link" href="">About the shelter</a>
+                            <hr>
+                        </li>
+                        <li><a class="nav-menu-link" href="/shelter/pages/pets">Our pets</a></li>
+                        <li><a class="nav-menu-link" href="#help">Help the shelter</a></li>
+                        <li><a class="nav-menu-link" href="#footer">Contacts</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="nav-menu">
-                <ul>
-                    <li>
-                        <a class="nav-menu-link" href="">About the shelter</a>
-                        <hr>
-                    </li>
-                    <li><a class="nav-menu-link" href="/shelter/pages/pets">Our pets</a></li>
-                    <li><a class="nav-menu-link" href="#help">Help the shelter</a></li>
-                    <li><a class="nav-menu-link" href="#footer">Contacts</a></li>
-                </ul>
-            </nav>
         </header>
         <div class="not-only center-aligned">
-            <div class="start-screen-puppy"></div>
             <div class="not-only-content">
                 <h2 class="not-only-heading">Not only people need a house</h2>
                 <div class="not-only-subheading paragraph-l">We offer to give a chance to a little and nice puppy with an extremely wide and open heart.
@@ -37,10 +38,11 @@
                     <button class="primary-btn">Make a friend</button>
                 </a>
             </div>
+            <div class="start-screen-puppy"></div>
         </div>
     </div>
-    <div class="about">
-        <div class="about-content center-aligned">
+    <div class="about center-aligned">
+        <div class="about-content">
             <div class="about-pets"></div>
             <div class="content">
                 <h3>About the shelter “Cozy House”</h3>
@@ -57,20 +59,22 @@
             <h3>Our friends who <br/>are looking for a house</h3>
             <div class="our-friends-slider">
                 <button class="navigation-btn left-arrow"></button>
-                <div class="card" id="katrine">
-                    <div class="pet-img"></div>
-                    <span class="pet-name">Katrine</span>
-                    <button class="secondary-btn">Learn more</button>
-                </div>
-                <div class="card" id="jennifer">
-                    <div class="pet-img"></div>
-                    <span class="pet-name">Jennifer</span>
-                    <button class="secondary-btn">Learn more</button>
-                </div>
-                <div class="card" id="woody">
-                    <div class="pet-img"></div>
-                    <span class="pet-name">Woody</span>
-                    <button class="secondary-btn">Learn more</button>
+                <div class="cards">
+                    <div class="card" id="katrine">
+                        <div class="pet-img"></div>
+                        <span class="pet-name">Katrine</span>
+                        <button class="secondary-btn">Learn more</button>
+                    </div>
+                    <div class="card" id="jennifer">
+                        <div class="pet-img"></div>
+                        <span class="pet-name">Jennifer</span>
+                        <button class="secondary-btn">Learn more</button>
+                    </div>
+                    <div class="card" id="woody">
+                        <div class="pet-img"></div>
+                        <span class="pet-name">Woody</span>
+                        <button class="secondary-btn">Learn more</button>
+                    </div>
                 </div>
                 <button class="navigation-btn right-arrow"></button>
             </div>
@@ -123,24 +127,25 @@
         </div>
     </div>
     <div class="donation">
-        <div class="donation-content">
-            <div class="donation-dog"></div>
-            <div class="donation-content-text">
-                <h3>You can also make a donation</h3>
-                <h5>Name of the bank / Type of bank account</h5>
-                <div class="credit-card">
-                    <div class="credit-card-icon"></div>
-                    <h4><a href="javascript:;">8380 2880 8028 8791 7435</a></h4>
+        <div class="donation-content-wrapper center-aligned">
+            <div class="donation-content">
+                <div class="donation-dog"></div>
+                <div class="donation-content-text">
+                    <h3>You can also make a donation</h3>
+                    <h5>Name of the bank / Type of bank account</h5>
+                    <div class="credit-card">
+                        <div class="credit-card-icon"></div>
+                        <h4><a href="javascript:;">8380 2880 8028 8791 7435</a></h4>
+                    </div>
+                    <span>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum
+                            at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et
+                            malesuada fames ac ante ipsum primis in faucibus.</span>
                 </div>
-                <span>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum
-                        at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et
-                        malesuada fames ac ante ipsum primis in faucibus.</span>
             </div>
         </div>
     </div>
     <footer id="footer">
         <div class="footer-content center-aligned">
-            <div class="footer-puppy"></div>
             <div class="contacts">
                 <h3>For questions and suggestions</h3>
                 <div class="email">
@@ -161,12 +166,12 @@
                 <div class="location boston">
                     <a class="location-icon"
                        href="https://www.google.com/maps/place/1+Central+St,+Boston,+MA+02109,+USA/@42.3585558,
-                        -71.056915,17z/data=!3m1!4b1!4m5!3m4!1s0x89e370868bc2ce7b:0x82fa7db94f5fea9e!8m2!3d42.3585519!4d-71.0547263"
+                            -71.056915,17z/data=!3m1!4b1!4m5!3m4!1s0x89e370868bc2ce7b:0x82fa7db94f5fea9e!8m2!3d42.3585519!4d-71.0547263"
                        target="_blank">
                     </a>
                     <h4>
                         <a href="https://www.google.com/maps/place/1+Central+St,+Boston,+MA+02109,+USA/@42.3585558,
-                        -71.056915,17z/data=!3m1!4b1!4m5!3m4!1s0x89e370868bc2ce7b:0x82fa7db94f5fea9e!8m2!3d42.3585519!4d-71.0547263"
+                            -71.056915,17z/data=!3m1!4b1!4m5!3m4!1s0x89e370868bc2ce7b:0x82fa7db94f5fea9e!8m2!3d42.3585519!4d-71.0547263"
                            target="_blank">
                             1 Central Street, Boston (entrance from the store)</a>
                     </h4>
@@ -174,19 +179,19 @@
                 <div class="location london">
                     <a class="location-icon"
                        href="https://www.google.com/maps/place/South+Park+Court,+18+S+Park+Rd,+London+SW19+8TD,+UK/@51.4202225,
-                        -0.2023407,17z/data=!3m1!4b1!4m5!3m4!1s0x487608baa7401b31:0x873a95ca58e122b2!8m2!3d51.4202192!4d-0.200152"
+                            -0.2023407,17z/data=!3m1!4b1!4m5!3m4!1s0x487608baa7401b31:0x873a95ca58e122b2!8m2!3d51.4202192!4d-0.200152"
                        target="_blank">
                     </a>
                     <h4>
                         <a href="https://www.google.com/maps/place/South+Park+Court,+18+S+Park+Rd,+London+SW19+8TD,+UK/@51.4202225,
-                        -0.2023407,17z/data=!3m1!4b1!4m5!3m4!1s0x487608baa7401b31:0x873a95ca58e122b2!8m2!3d51.4202192!4d-0.200152"
+                            -0.2023407,17z/data=!3m1!4b1!4m5!3m4!1s0x487608baa7401b31:0x873a95ca58e122b2!8m2!3d51.4202192!4d-0.200152"
                            target="_blank">
                             18 South Park, London</a>
                     </h4>
                 </div>
             </div>
+            <div class="footer-puppy"></div>
         </div>
-
     </footer>
 </div>
 </body>

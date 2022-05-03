@@ -1,0 +1,36 @@
+@use "../../../styles/common/colors";
+
+
+.start-screen{
+  background-image: url("../../../assets/images/start-screen-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 908px;
+}
+
+.start-screen-puppy{
+  width: 698px;
+  height: 728px;
+  background: url("../../../assets/images/start-screen-puppy.png");
+}
+
+.not-only {
+  display: flex;
+}
+
+.not-only-content {
+  width: 42%;
+}
+
+.not-only-heading{
+  width: 310px;
+  margin-top: 164px;
+  letter-spacing: 0.0em;
+  color: colors.$color-light-xl;
+}
+
+.not-only-subheading{
+  margin: 40px 0;
+  width: 460px;
+  color: colors.$color-dark-s;
+}
