@@ -14,7 +14,7 @@ button {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-button:hover {
+button:hover:enabled {
   background-color: colors.$color-primary-light;
   border-color: colors.$color-primary-light;
   cursor: pointer;
@@ -39,6 +39,7 @@ button:hover {
 
   font-size: 20px;
   line-height: 115%;
+  background-color: colors.$color-light-s;
 }
 
 .left-arrow {
@@ -49,4 +50,14 @@ button:hover {
   background: url("/shelter/assets/icons/arrow.png") no-repeat center center;
   transform: rotate(180deg);
   filter: drop-shadow(0px -4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.navigation-btn:disabled {
+  border: 2px solid colors.$color-dark-s;
+  color: colors.$color-dark-s;
+}
+
+.current{
+  pointer-events: none;
+  background-color: colors.$color-primary;
 }

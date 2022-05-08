@@ -1,0 +1,53 @@
+@use "../../commonStyles/colors";
+
+@import "../../commonStyles/normalize";
+
+@import "../../commonStyles/text_styles";
+@import "../../commonStyles/buttons";
+@import "../../commonStyles/card";
+@import "../../commonStyles/footer";
+
+@import "header";
+
+
+.center-aligned {
+  width: 1200px;
+  margin: auto;
+}
+
+.our-friends{
+  background: colors.$color-light-l;
+  background-size: cover;
+}
+
+.our-friends-content {
+  padding: 80px 0 100px 0;
+  width: 1200px;
+
+  h3 {
+    margin: 0 auto;
+    width: 400px;
+    height: 90px;
+    text-align: center;
+
+    color: colors.$color-dark-l;
+  }
+
+  .cards-container{
+    margin: 40px 0;
+    display: grid;
+    gap: 20px 40px;
+    grid-template-columns: auto auto auto auto;
+    padding: 15px 0;
+  }
+
+  .pets-navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+#go-to-first, #go-back, #current, #go-next {
+  margin-right: 20px;
+}

@@ -22,6 +22,7 @@
 .card:hover {
   background: colors.$color-light-xl;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
 
   .secondary-btn {
     background: colors.$color-primary-light;
@@ -54,8 +55,7 @@
 }
 
 div#katrine .pet-img{
-  background: url("/shelter/assets/images/pets-katrine.png");
-  //background: url("../../assets/images/pets-katrine.png") no-repeat;
+  background: url("/shelter/assets/images/pets-katrine.png") no-repeat;
 }
 
 div#jennifer .pet-img{
@@ -64,4 +64,24 @@ div#jennifer .pet-img{
 
 div#woody .pet-img{
   background: url("/shelter/assets/images/pets-woody.png") no-repeat;
+}
+
+div#sophia .pet-img{
+  background: url("/shelter/assets/images/pets-sofia.png") no-repeat;
+}
+
+div#timmy .pet-img{
+  background: url("/shelter/assets/images/pets-timmy.png") no-repeat;
+}
+
+div#charly .pet-img{
+  background: url("/shelter/assets/images/pets-charly.png") no-repeat;
+}
+
+div#scarlett .pet-img{
+  background: url("/shelter/assets/images/pets-scarlett.png") no-repeat;
+}
+
+div#freddie .pet-img{
+  background: url("/shelter/assets/images/pets-freddie.png") no-repeat;
 }
