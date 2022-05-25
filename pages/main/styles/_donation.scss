@@ -2,7 +2,7 @@
 
 
 .donation{
-  height: 462px;
+  //height: 462px;
   background: colors.$color-light-l;
 }
 
@@ -24,7 +24,7 @@
   }
 
   h5{
-    margin-top: 20px;
+    margin: 20px 0;
     align-items: center;
     color: colors.$color-dark-l;
   }
@@ -47,8 +47,10 @@
 .donation-dog{
   margin-top: 10px;
   height: 261px;
-  width: 60%;
+  //width: 60%; removed for small screen
   background: url("../../../assets/images/donation-dog.png") no-repeat;
+  background-size: contain;
+  background-position-x: center;
 }
 
 .donation-content-text{
@@ -76,4 +78,44 @@
   background: url("../../../assets/icons/credit-card.svg");
   width: 30px;
   height: 23px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .donation-content {
+    padding: 42px 10px;
+    display: flex;
+    flex-direction: column-reverse;
+
+    span {
+      display: block;
+      padding: 0 10px;
+      text-align: center;
+    }
+  }
+
+  .donation-content-text {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 25px;
+    text-align: center;
+    //width: 98%!important;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  h5 {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .credit-card {
+    margin: 20px auto;
+  }
+  .donation-dog {
+    margin: 42px 30px 0 30px;
+    height: 135px;
+  }
 }

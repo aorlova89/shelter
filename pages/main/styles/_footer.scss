@@ -5,7 +5,8 @@ footer {
   background-image: url("../../../assets/images/start-screen-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 350px;
+
+  //height: 350px;
 }
 
 .footer-content{
@@ -30,33 +31,39 @@ footer {
     }
 
     h3 {
-      width: 70%;
+      //width: 70%;
     }
 
   }
 
   .locations {
-    margin-top: 17px;
-    margin-left: 10px;
+    //margin-top: 17px;
+    padding-bottom: 40px;
+    //margin-left: 10px; commented for small size
 
     .location {
       display: flex;
-      margin-top: 34px;
+      margin-top: 40px;
+      //margin-top: 34px;
     }
 
     h3 {
-      width: 70%;
+      //width: 70%;
     }
 
     h4 {
-      width: 60%;
+      width: 85%;
+      //width: 60%; commented for small screen
+
     }
   }
 
   .footer-puppy {
-    width: 400px;
-    height: 310px;
-    background: url("../../../assets/images/footer-puppy.png") no-repeat right;
+    //width: 400px;
+    height: 269px;
+
+    background: url("../../../assets/images/footer-puppy.png") no-repeat center;
+    background-size: contain;
   }
 
   .email-icon {
@@ -84,4 +91,32 @@ footer {
 a {
   text-decoration: none;
   color: colors.$color-primary;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer-content {
+    flex-direction: column;
+    padding: 13px 10px 0 10px;
+    justify-content: center;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .footer-content .contacts .email, .footer-content .contacts .phone {
+    justify-content: center;
+  }
+
+  .contacts {
+    margin-bottom: 40px;
+  }
+
+  .locations {
+    text-align: center;
+    margin: auto;
+    h3 {
+      margin: 0 15px;
+    }
+  }
 }

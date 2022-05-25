@@ -1,31 +1,32 @@
 @use "../../commonStyles/colors";
 
 .help {
-  height: 611px;
+  //height: 611px;
   background: colors.$color-light-xl;
 }
 
 .help-content{
-  padding-top: 80px;
+  //padding-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   h3 {
     margin: 0;
-    width: 310px;
+    //width: 310px; only for wide screen
     text-align: center;
     color: colors.$color-dark-l;
   }
 }
 
 .help-list {
-  margin: 60px 87px 0 87px;
+  //margin: 60px 87px 0 87px; removed for small screens, recheck
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 52px 119px;
+  //justify-content: center; removed for small screen
+  //gap: 52px 119px;
+
 
   h4 {
     margin: 0;
@@ -46,8 +47,8 @@
   justify-content: space-between;
 
   .help-img {
-    width: 60px;
-    height: 60px;
+    //width: 60px;
+    //height: 60px;
   }
 }
 
