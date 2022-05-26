@@ -390,6 +390,13 @@ h5 {
   line-height: 110%;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  h3 {
+    font-size: 25px;
+    line-height: 32px;
+    text-align: center;
+  }
+}
 button {
   font-family: "Georgia", serif;
   font-style: normal;

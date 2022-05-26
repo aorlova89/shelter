@@ -2,7 +2,7 @@
 
 
 header {
-  width: 1200px;
+  //width: 1200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,7 +21,7 @@ h1 {
 }
 
 .logo-title {
-  margin-bottom: 9px;
+  //margin-bottom: 9px;
   color: colors.$color-dark-l;
 }
 
@@ -79,4 +79,20 @@ hr {
   height: 2px;
   width: 85%;
   margin: auto;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  h3 {
+    margin: 0;
+    color: colors.$color-light-xl;
+  }
+
+  .nav-menu {
+    display: none !important;
+  }
+
+  .header-content {
+    padding: 0 53px 0 10px;
+
+  }
 }

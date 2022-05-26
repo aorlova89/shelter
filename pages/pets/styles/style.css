@@ -390,6 +390,13 @@ h5 {
   line-height: 110%;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  h3 {
+    font-size: 25px;
+    line-height: 32px;
+    text-align: center;
+  }
+}
 button {
   font-family: "Georgia", serif;
   font-style: normal;
@@ -531,7 +538,6 @@ footer {
   background-image: url("/shelter/assets/images/start-screen-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 350px;
 }
 
 .footer-content {
@@ -552,25 +558,14 @@ footer {
   display: flex;
   margin-top: 40px;
 }
-.footer-content .contacts h3 {
-  width: 70%;
-}
 .footer-content .locations {
-  margin-top: 17px;
-  margin-left: 10px;
+  padding-bottom: 40px;
 }
 .footer-content .locations .location {
   display: flex;
-  margin-top: 34px;
-}
-.footer-content .locations h3 {
-  width: 70%;
-}
-.footer-content .locations h4 {
-  width: 60%;
+  margin-top: 40px;
 }
 .footer-content .footer-puppy {
-  width: 400px;
   height: 310px;
   background: url("/shelter/assets/images/footer-puppy.png") no-repeat right;
 }
@@ -598,8 +593,41 @@ a {
   color: #F1CDB3;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .locations {
+    text-align: center;
+    margin: auto;
+  }
+  .locations h3 {
+    margin: 0 15px;
+  }
+  .locations h4 {
+    width: 85%;
+  }
+
+  .footer-puppy {
+    height: 269px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    padding: 13px 10px 0 10px;
+    justify-content: center;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .footer-content .contacts .email, .footer-content .contacts .phone {
+    justify-content: center;
+  }
+
+  .contacts {
+    margin-bottom: 40px;
+  }
+}
 header {
-  width: 1200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -618,7 +646,6 @@ h1 {
 }
 
 .logo-title {
-  margin-bottom: 9px;
   color: #545454;
 }
 
@@ -676,33 +703,32 @@ hr {
   margin: auto;
 }
 
-.center-aligned {
-  width: 1200px;
-  margin: auto;
+@media (min-width: 320px) and (max-width: 767px) {
+  h3 {
+    margin: 0;
+    color: #FFFFFF;
+  }
+
+  .nav-menu {
+    display: none !important;
+  }
+
+  .header-content {
+    padding: 0 53px 0 10px;
+  }
+}
+.content-wrapper {
+  width: 100%;
 }
 
 .our-friends {
   background: #F6F6F6;
-  background-size: cover;
 }
 
-.our-friends-content {
-  padding: 80px 0 100px 0;
-  width: 1200px;
-}
 .our-friends-content h3 {
   margin: 0 auto;
-  width: 400px;
-  height: 90px;
   text-align: center;
   color: #545454;
-}
-.our-friends-content .cards-container {
-  margin: 40px 0;
-  display: grid;
-  gap: 20px 40px;
-  grid-template-columns: auto auto auto auto;
-  padding: 15px 0;
 }
 .our-friends-content .pets-navigation {
   display: flex;
@@ -712,6 +738,31 @@ hr {
 
 #go-to-first, #go-back, #current, #go-next {
   margin-right: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .our-friends-content {
+    padding: 42px 10px;
+  }
+
+  #sophia, #timmy, #charly, #scarlett, #freddie {
+    display: none;
+  }
+
+  .cards-container {
+    margin-top: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
+
+  #go-to-first, #go-back, #current, #go-next {
+    margin-right: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
