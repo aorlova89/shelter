@@ -5,13 +5,13 @@
   background-image: url("../../../assets/images/start-screen-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 908px;
+  //height: 908px;
 }
 
 .start-screen-puppy{
-  width: 698px;
-  height: 728px;
-  background: url("../../../assets/images/start-screen-puppy.png");
+//  //width: 698px;
+//  //height: 728px;
+  background: url("../../../assets/images/start-screen-puppy.png") no-repeat;
 }
 
 .not-only {
@@ -23,14 +23,47 @@
 }
 
 .not-only-heading{
-  width: 310px;
+  //width: 310px;
   margin-top: 164px;
-  letter-spacing: 0.0em;
+  //letter-spacing: 0.0em;
   color: colors.$color-light-xl;
 }
 
 .not-only-subheading{
   margin: 40px 0;
-  width: 460px;
+  //width: 460px;
   color: colors.$color-dark-s;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .not-only {
+    display: block;
+    padding: 60px 10px 0 10px;
+    text-align: center;
+  }
+
+  .not-only-heading {
+    padding: 0 34px;
+    margin: 0;
+    color: colors.$color-light-xl;
+  }
+
+  .not-only-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .not-only-subheading {
+    margin: 42px 0;
+  }
+
+  .start-screen-puppy {
+    margin-top: 105px;
+    //background: url("../../../assets/images/start-screen-puppy.png") no-repeat;
+    background-size: contain;
+    height: 271px;
+    background-position-x: right;
+  }
 }

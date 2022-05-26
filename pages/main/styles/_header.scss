@@ -83,4 +83,21 @@ hr {
   margin: auto;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  h3 {
+    //font-size: 25px;
+    margin: 0;
+    color: colors.$color-light-xl;
+  }
+
+  .nav-menu {
+    display: none !important;
+  }
+
+  .header-content {
+    padding: 30px 53px 0 10px;
+    margin: 0;
+  }
+}
+
 

@@ -2,11 +2,11 @@
 
 
 .our-friends{
-  height: 877px;
+  //height: 877px;
   background: colors.$color-light-l;
 
   .our-friends-btn {
-    margin-top: 36px;
+    //margin-top: 36px;
   }
 }
 
@@ -23,9 +23,9 @@
 }
 
 .our-friends-slider {
-  width: 100%;
-  height: 435px;
-  margin: 24px 0;
+  //width: 100%;
+  //height: 435px;
+  //margin: 24px 0;
 
   display: flex;
   justify-content: space-between;
@@ -36,5 +36,45 @@
     align-items: center;
     justify-content: space-between;
     gap: 92px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .our-friends {
+    h3 {
+      margin-top: 0;
+    }
+
+    #jennifer, #woody {
+      display: none;
+    }
+
+    .our-friends-content {
+      padding: 42px 10px;
+      text-align: center;
+    }
+
+    .our-friends-slider {
+      padding: 42px 15px;
+      //display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      row-gap: 10px;
+    }
+
+    button {
+      order: 1;
+    }
+
+    a {
+      padding: 0 20px;
+    }
+
+    .cards {
+      flex: 0 100%;
+      display: flex;
+      justify-content: center;
+    }
+
   }
 }

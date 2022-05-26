@@ -1,9 +1,17 @@
+//@import "general";
+
 @use "../../commonStyles/colors";
 
 @import "../../commonStyles/normalize";
 @import "../../commonStyles/text_styles";
 @import "../../commonStyles/buttons";
 @import "../../commonStyles/card";
+
+@import "../styles/header";
+@import "../styles/startScreen";
+@import "../styles/about";
+@import "../styles/ourFriends";
+
 @import "../styles/help";
 @import "../styles/donation";
 @import "../styles/footer";
@@ -11,176 +19,16 @@
 //768px <= width < 1280px
 //320px <= width < 768px
 
+
 .content-wrapper{
   width: 100%;
 }
-.h3-mobile {
-  color: colors.$color-dark-l;
-}
-.start-screen {
-  background-image: url("../../../assets/images/start-screen-background.jpg");
-}
-
-a {
-  text-decoration: none;
-  color: colors.$color-primary;
-}
-
 
 @media (min-width: 320px) and (max-width: 767px){
-  .center-aligned {
-    //width: 100%;
-    //margin: auto;
-  }
-
   h3 {
     font-size: 25px;
-    margin: 0;
-  }
-
-  .nav-menu {
-    display: none !important;
-  }
-
-  .header-content {
-    padding: 30px 53px 0 10px;
-  }
-
-  .logo-subtitle{
-    font-family: 'Arial', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 15px;
-    letter-spacing: 0.1em;
-  }
-
-  .not-only {
-    padding: 60px 10px 0 10px;
-    color: colors.$color-light-xl;
+    line-height: 32px;
     text-align: center;
   }
 
-  .not-only-heading {
-    padding: 10px 20px 0 20px;
-    color: colors.$color-light-xl;
-    //font-size: 25px;
-  }
-
-  .not-only-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .not-only-subheading{
-    margin: 42px 0;
-  }
-
-  .start-screen-puppy{
-    margin-top: 105px;
-    background: url("../../../assets/images/start-screen-puppy.png") no-repeat;
-    background-size: contain;
-    height: 271px;
-    background-position-x: right;
-  }
-
-  .about-content {
-    padding: 42px 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  #about-p-1{
-    margin: 25px 15px 22px 15px;
-  }
-
-  #about-p-2 {
-    margin: 0 15px
-  }
-
-  .about-pets{
-    margin: 42px 20px 0 20px;
-
-    height: 353px;
-    background: url(../../../assets/images/about-pets.png) no-repeat;
-    background-position-x: center;
-    background-size: contain;
-    //background-position-x: 175px;
-  }
-
-  .our-friends{
-    background: colors.$color-light-l;
-
-    #jennifer, #woody {
-      display: none;
-    }
-
-    .our-friends-content {
-      padding: 42px 10px;
-      text-align: center;
-    }
-
-    .our-friends-slider {
-      padding: 42px 15px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      row-gap: 10px;
-    }
-
-    button {
-      order: 1;
-    }
-
-    a {
-      padding: 0 20px;
-    }
-
-    .cards {
-      flex: 0 100%;
-      display: flex;
-      justify-content: center;
-    }
-
-  }
-
-  .help {
-    h3 {
-      padding: 42px 49px;
-    }
-
-    h4 {
-      font-size: 15px;
-    }
-    .help-list {
-      padding: 0 15px 42px 15px;
-      gap: 30px 30px;
-      justify-content: space-between;
-    }
-
-    .help-item {
-      width: 40%;
-      //width: 130px;
-      height: 87px;
-      //flex: 43%;
-    }
-
-    .help-img {
-      background-size: cover!important;
-      width: 50px;
-      height: 50px;
-
-    }
-  }
-
-  .credit-card {
-    width: 270px;
-    justify-content: center;
-    h4 {
-      font-size: 15px;
-      line-height: 110%;
-    }
-  }
 }

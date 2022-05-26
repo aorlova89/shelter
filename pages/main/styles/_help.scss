@@ -79,3 +79,34 @@ div#collars-and-lashes .help-img{
 div#sleeping-areas .help-img{
   background: url("../../../assets/icons/icon-sleeping-area.svg") no-repeat;
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .help {
+    h3 {
+      padding: 42px 49px;
+    }
+
+    h4 {
+      font-size: 15px;
+    }
+
+    .help-list {
+      padding: 0 15px 42px 15px;
+      gap: 30px 30px;
+      justify-content: space-between;
+    }
+
+    .help-item {
+      width: 40%;
+      //width: 130px;
+      height: 87px;
+    }
+
+    .help-img {
+      background-size: cover !important;
+      width: 50px;
+      height: 50px;
+
+    }
+  }
+}

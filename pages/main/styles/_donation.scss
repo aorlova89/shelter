@@ -12,7 +12,7 @@
 
   h3{
     margin: 0;
-    width: 90%;
+    //width: 90%;
     color: colors.$color-dark-l;
   }
 
@@ -79,6 +79,7 @@
   width: 30px;
   height: 23px;
 }
+
 @media (min-width: 320px) and (max-width: 767px) {
   .donation-content {
     padding: 42px 10px;
@@ -113,9 +114,18 @@
 
   .credit-card {
     margin: 20px auto;
+    width: 270px;
+    justify-content: center;
+    h4 {
+      font-size: 15px;
+      line-height: 110%;
+    }
   }
+
   .donation-dog {
     margin: 42px 30px 0 30px;
     height: 135px;
+    background-position-x: center;
   }
 }
+

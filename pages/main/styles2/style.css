@@ -353,6 +353,12 @@ h3 {
   line-height: 130%;
 }
 
+.h3-mobile {
+  font-size: 25px;
+  line-height: 32px;
+  text-align: center;
+}
+
 h4 {
   font-size: 20px;
   line-height: 115%;
@@ -382,15 +388,6 @@ h5 {
 .logo-title {
   font-size: 32px;
   line-height: 110%;
-}
-
-.h3-mobile {
-  font-family: Georgia, serif;
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 32px;
-  letter-spacing: 0.06em;
-  text-align: center;
 }
 
 button {
@@ -530,6 +527,273 @@ div#freddie .pet-img {
   background: url("/shelter/assets/images/pets-freddie.png") no-repeat;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-content {
+  width: 100%;
+  display: flex;
+  margin: 60px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shelter-logo {
+  width: 186px;
+}
+
+h1 {
+  color: #F1CDB3;
+}
+
+.logo-title {
+  margin-bottom: 9px;
+}
+
+.logo-subtitle {
+  font-family: "Arial", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+.nav-menu {
+  width: 443px;
+  height: 27px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  padding: 12px;
+}
+
+.nav-menu-link {
+  font-family: "Arial", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #CDCDCD;
+  text-decoration: none;
+}
+
+.nav-menu-link:hover, .nav-menu-link:active {
+  color: #F6F6F6;
+  text-decoration: none;
+}
+
+hr {
+  color: #F1CDB3;
+  border-width: 0;
+  background-color: #F1CDB3;
+  height: 2px;
+  width: 85%;
+  margin: auto;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  h3 {
+    margin: 0;
+    color: #FFFFFF;
+  }
+
+  .nav-menu {
+    display: none !important;
+  }
+
+  .header-content {
+    padding: 30px 53px 0 10px;
+    margin: 0;
+  }
+}
+.start-screen {
+  background-image: url("../../../assets/images/start-screen-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.start-screen-puppy {
+  background: url("../../../assets/images/start-screen-puppy.png") no-repeat;
+}
+
+.not-only {
+  display: flex;
+}
+
+.not-only-content {
+  width: 42%;
+}
+
+.not-only-heading {
+  margin-top: 164px;
+  color: #FFFFFF;
+}
+
+.not-only-subheading {
+  margin: 40px 0;
+  color: #CDCDCD;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .not-only {
+    display: block;
+    padding: 60px 10px 0 10px;
+    text-align: center;
+  }
+
+  .not-only-heading {
+    padding: 0 34px;
+    margin: 0;
+    color: #FFFFFF;
+  }
+
+  .not-only-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .not-only-subheading {
+    margin: 42px 0;
+  }
+
+  .start-screen-puppy {
+    margin-top: 105px;
+    background-size: contain;
+    height: 271px;
+    background-position-x: right;
+  }
+}
+.about {
+  background: #FFFFFF;
+}
+
+.about-content {
+  padding-top: 80px;
+  display: flex;
+}
+
+.about-pets {
+  height: 408px;
+  background: url(../../../assets/images/about-pets.png) no-repeat;
+  background-position-x: 175px;
+}
+
+.content {
+  width: 35%;
+}
+.content h3 {
+  margin: 15px 20px 0 -5px;
+  color: #545454;
+}
+
+#about-p-1, #about-p-2 {
+  margin: 23px 0 0 -5px;
+  color: #4C4C4C;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .content {
+    width: 100%;
+  }
+
+  .about-content {
+    padding: 42px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .about-content h3 {
+    margin: 0;
+  }
+
+  #about-p-1 {
+    margin: 25px 15px 22px 15px;
+  }
+
+  #about-p-2 {
+    margin: 0 15px;
+  }
+
+  .about-pets {
+    margin: 42px 20px 0 20px;
+    height: 353px;
+    background-position-x: center;
+    background-size: contain;
+  }
+}
+.our-friends {
+  background: #F6F6F6;
+}
+.our-friends-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our-friends-content h3 {
+  margin-top: 80px;
+  text-align: center;
+  color: #545454;
+}
+
+.our-friends-slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.our-friends-slider .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 92px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .our-friends h3 {
+    margin-top: 0;
+  }
+  .our-friends #jennifer, .our-friends #woody {
+    display: none;
+  }
+  .our-friends .our-friends-content {
+    padding: 42px 10px;
+    text-align: center;
+  }
+  .our-friends .our-friends-slider {
+    padding: 42px 15px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 10px;
+  }
+  .our-friends button {
+    order: 1;
+  }
+  .our-friends a {
+    padding: 0 20px;
+  }
+  .our-friends .cards {
+    flex: 0 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
 .help {
   background: #FFFFFF;
 }
@@ -602,6 +866,28 @@ div#sleeping-areas .help-img {
   background: url("../../../assets/icons/icon-sleeping-area.svg") no-repeat;
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .help h3 {
+    padding: 42px 49px;
+  }
+  .help h4 {
+    font-size: 15px;
+  }
+  .help .help-list {
+    padding: 0 15px 42px 15px;
+    gap: 30px 30px;
+    justify-content: space-between;
+  }
+  .help .help-item {
+    width: 40%;
+    height: 87px;
+  }
+  .help .help-img {
+    background-size: cover !important;
+    width: 50px;
+    height: 50px;
+  }
+}
 .donation {
   background: #F6F6F6;
 }
@@ -612,7 +898,6 @@ div#sleeping-areas .help-img {
 }
 .donation-content h3 {
   margin: 0;
-  width: 90%;
   color: #545454;
 }
 .donation-content h4 {
@@ -704,11 +989,18 @@ div#sleeping-areas .help-img {
 
   .credit-card {
     margin: 20px auto;
+    width: 270px;
+    justify-content: center;
+  }
+  .credit-card h4 {
+    font-size: 15px;
+    line-height: 110%;
   }
 
   .donation-dog {
     margin: 42px 30px 0 30px;
     height: 135px;
+    background-position-x: center;
   }
 }
 footer {
@@ -805,151 +1097,11 @@ a {
   width: 100%;
 }
 
-.h3-mobile {
-  color: #545454;
-}
-
-.start-screen {
-  background-image: url("../../../assets/images/start-screen-background.jpg");
-}
-
-a {
-  text-decoration: none;
-  color: #F1CDB3;
-}
-
 @media (min-width: 320px) and (max-width: 767px) {
   h3 {
     font-size: 25px;
-    margin: 0;
-  }
-
-  .nav-menu {
-    display: none !important;
-  }
-
-  .header-content {
-    padding: 30px 53px 0 10px;
-  }
-
-  .logo-subtitle {
-    font-family: "Arial", serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 15px;
-    letter-spacing: 0.1em;
-  }
-
-  .not-only {
-    padding: 60px 10px 0 10px;
-    color: #FFFFFF;
+    line-height: 32px;
     text-align: center;
-  }
-
-  .not-only-heading {
-    padding: 10px 20px 0 20px;
-    color: #FFFFFF;
-  }
-
-  .not-only-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .not-only-subheading {
-    margin: 42px 0;
-  }
-
-  .start-screen-puppy {
-    margin-top: 105px;
-    background: url("../../../assets/images/start-screen-puppy.png") no-repeat;
-    background-size: contain;
-    height: 271px;
-    background-position-x: right;
-  }
-
-  .about-content {
-    padding: 42px 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  #about-p-1 {
-    margin: 25px 15px 22px 15px;
-  }
-
-  #about-p-2 {
-    margin: 0 15px;
-  }
-
-  .about-pets {
-    margin: 42px 20px 0 20px;
-    height: 353px;
-    background: url(../../../assets/images/about-pets.png) no-repeat;
-    background-position-x: center;
-    background-size: contain;
-  }
-
-  .our-friends {
-    background: #F6F6F6;
-  }
-  .our-friends #jennifer, .our-friends #woody {
-    display: none;
-  }
-  .our-friends .our-friends-content {
-    padding: 42px 10px;
-    text-align: center;
-  }
-  .our-friends .our-friends-slider {
-    padding: 42px 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    row-gap: 10px;
-  }
-  .our-friends button {
-    order: 1;
-  }
-  .our-friends a {
-    padding: 0 20px;
-  }
-  .our-friends .cards {
-    flex: 0 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .help h3 {
-    padding: 42px 49px;
-  }
-  .help h4 {
-    font-size: 15px;
-  }
-  .help .help-list {
-    padding: 0 15px 42px 15px;
-    gap: 30px 30px;
-    justify-content: space-between;
-  }
-  .help .help-item {
-    width: 40%;
-    height: 87px;
-  }
-  .help .help-img {
-    background-size: cover !important;
-    width: 50px;
-    height: 50px;
-  }
-
-  .credit-card {
-    width: 270px;
-    justify-content: center;
-  }
-  .credit-card h4 {
-    font-size: 15px;
-    line-height: 110%;
   }
 }
 

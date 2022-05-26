@@ -2,18 +2,18 @@
 
 
 .about{
-  height: 588px;
+  //height: 588px;
   background: colors.$color-light-xl;
 }
 
 .about-content{
   padding-top: 80px;
-  margin: 0 0 100px 0;
+  //margin: 0 0 100px 0;
   display: flex;
 }
 
 .about-pets{
-  width: 50%;
+  //width: 50%;
   height: 408px;
   background: url(../../../assets/images/about-pets.png) no-repeat;
   background-position-x: 175px;
@@ -31,4 +31,36 @@
 #about-p-1, #about-p-2 {
   margin: 23px 0 0 -5px;
   color: colors.$color-dark-xl;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .content {
+    width: 100%;
+  }
+
+  .about-content {
+    padding: 42px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+
+    h3{
+      margin: 0;
+    }
+  }
+
+  #about-p-1 {
+    margin: 25px 15px 22px 15px;
+  }
+
+  #about-p-2 {
+    margin: 0 15px
+  }
+
+  .about-pets {
+    margin: 42px 20px 0 20px;
+    height: 353px;
+    background-position-x: center;
+    background-size: contain;
+  }
 }
