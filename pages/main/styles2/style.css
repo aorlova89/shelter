@@ -864,10 +864,10 @@ a {
 
   .start-screen-puppy {
     margin-top: 105px;
-    background: url("../../../assets/images/start-screen-puppy.png");
-    background-size: cover;
-    width: 260px;
+    background: url("../../../assets/images/start-screen-puppy.png") no-repeat;
+    background-size: contain;
     height: 271px;
+    background-position-x: right;
   }
 
   .about-content {
@@ -931,11 +931,11 @@ a {
   .help .help-list {
     padding: 0 15px 42px 15px;
     gap: 30px 30px;
+    justify-content: space-between;
   }
   .help .help-item {
-    width: 130px;
+    width: 40%;
     height: 87px;
-    flex: 43%;
   }
   .help .help-img {
     background-size: cover !important;
