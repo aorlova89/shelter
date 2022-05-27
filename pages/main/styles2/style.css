@@ -959,6 +959,7 @@ div#sleeping-areas .help-img {
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .help-list {
+    width: 630px;
     padding: 0 69px 100px 69px;
     justify-content: center;
     gap: 52px 60px;
@@ -1083,6 +1084,7 @@ div#sleeping-areas .help-img {
 
   .credit-card {
     margin: 20px 31px 20px 0;
+    width: 350px;
   }
 
   .donation-content {
@@ -1111,7 +1113,6 @@ footer {
 }
 .footer-content .locations .location {
   display: flex;
-  margin-top: 34px;
 }
 .footer-content .locations h4 {
   width: 85%;
@@ -1174,13 +1175,30 @@ a {
   .locations .location {
     margin-top: 40px;
   }
+  .locations .location .location {
+    display: flex;
+  }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   .footer-content {
+    width: 708px;
+    margin: 0 auto;
     padding: 30px 30px 0 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .footer-content .footer-puppy {
+    width: 300px;
+    height: 310px;
+    background-size: contain;
+  }
+  .footer-content .locations {
+    width: 298px;
+    padding-bottom: 55px;
+  }
+  .footer-content .locations .location {
+    margin-top: 38px;
   }
 
   .contacts, .locations {
@@ -1193,15 +1211,7 @@ a {
 
   .contacts {
     width: 288px;
-    padding-right: 60px;
-  }
-
-  .locations {
-    width: 288px;
-  }
-
-  .footer-puppy {
-    width: 300px;
+    padding-right: 50px;
   }
 }
 .content-wrapper {

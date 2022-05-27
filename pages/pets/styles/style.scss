@@ -5,13 +5,21 @@
 @import "../../commonStyles/text_styles";
 @import "../../commonStyles/buttons";
 @import "../../commonStyles/card";
-@import "../../commonStyles/footer";
+@import "../../main/styles/footer";
 
 @import "header";
 
 
 .content-wrapper{
   width: 100%;
+}
+
+#main {
+  width: 100%;
+  position: absolute;
+  top: 120px;
+  overflow-x: hidden;
+  bottom: 0;
 }
 
 //.center-aligned {
@@ -77,5 +85,28 @@
 
   #go-to-first, #go-back, #current, #go-next {
     margin-right: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .our-friends-content {
+    width: 708px;
+    margin: 0 auto;
+    padding: 60px 30px 70px 30px;
+  }
+
+  .friends-header {
+    padding: 20px 154px 30px 154px;
+  }
+
+  #scarlett, #freddie {
+    display: none;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 64px 40px 64px;
+    gap: 20px 40px;
   }
 }

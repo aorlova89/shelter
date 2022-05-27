@@ -535,22 +535,17 @@ div#freddie .pet-img {
 }
 
 footer {
-  background-image: url("/shelter/assets/images/start-screen-background.jpg");
+  background-image: url("../../../assets/images/start-screen-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.footer-content {
-  display: flex;
-  padding-top: 40px;
-}
 .footer-content h3 {
   margin: 0;
   color: #FFFFFF;
 }
 .footer-content h4 {
   margin: 0;
-}
-.footer-content .contacts {
-  margin-top: 17px;
 }
 .footer-content .contacts .email, .footer-content .contacts .phone {
   display: flex;
@@ -561,26 +556,29 @@ footer {
 }
 .footer-content .locations .location {
   display: flex;
-  margin-top: 40px;
+}
+.footer-content .locations h4 {
+  width: 85%;
 }
 .footer-content .footer-puppy {
-  height: 310px;
-  background: url("/shelter/assets/images/footer-puppy.png") no-repeat right;
+  height: 269px;
+  background: url("../../../assets/images/footer-puppy.png") no-repeat center;
+  background-size: contain;
 }
 .footer-content .email-icon {
-  background: url("/shelter/assets/icons/mail.png") no-repeat;
+  background: url("../../../assets/icons/mail.png") no-repeat;
   width: 40px;
   height: 32px;
   margin-right: 20px;
 }
 .footer-content .phone-icon {
-  background: url("/shelter/assets/icons/icon-phone.svg");
+  background: url("../../../assets/icons/icon-phone.svg");
   width: 40px;
   height: 32px;
   margin-right: 20px;
 }
 .footer-content .location-icon {
-  background: url("/shelter/assets/icons/icon-marker.png") no-repeat;
+  background: url("../../../assets/icons/icon-marker.png") no-repeat;
   width: 22px;
   height: 32px;
   margin-right: 20px;
@@ -592,24 +590,9 @@ a {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .locations {
-    text-align: center;
-    margin: auto;
-  }
-  .locations h3 {
-    margin: 0 15px;
-  }
-  .locations h4 {
-    width: 85%;
-  }
-
-  .footer-puppy {
-    height: 269px;
-  }
-
   .footer-content {
     flex-direction: column;
-    padding: 13px 10px 0 10px;
+    padding: 30px 10px 0 10px;
     justify-content: center;
   }
 
@@ -623,6 +606,55 @@ a {
 
   .contacts {
     margin-bottom: 40px;
+  }
+
+  .locations {
+    text-align: center;
+    margin: auto;
+  }
+  .locations h3 {
+    margin: 0 15px;
+  }
+  .locations .location {
+    margin-top: 40px;
+  }
+  .locations .location .location {
+    display: flex;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .footer-content {
+    width: 708px;
+    margin: 0 auto;
+    padding: 30px 30px 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-content .footer-puppy {
+    width: 300px;
+    height: 310px;
+    background-size: contain;
+  }
+  .footer-content .locations {
+    width: 298px;
+    padding-bottom: 55px;
+  }
+  .footer-content .locations .location {
+    margin-top: 38px;
+  }
+
+  .contacts, .locations {
+    order: 1;
+  }
+
+  .footer-puppy {
+    order: 2;
+  }
+
+  .contacts {
+    width: 288px;
+    padding-right: 50px;
   }
 }
 header {
@@ -715,8 +747,21 @@ hr {
     padding: 0 53px 0 10px;
   }
 }
+@media (min-width: 768px) and (max-width: 1279px) {
+  .header-content {
+    margin: 30px;
+  }
+}
 .content-wrapper {
   width: 100%;
+}
+
+#main {
+  width: 100%;
+  position: absolute;
+  top: 120px;
+  overflow-x: hidden;
+  bottom: 0;
 }
 
 .our-friends {
@@ -760,6 +805,28 @@ hr {
 
   #go-to-first, #go-back, #current, #go-next {
     margin-right: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .our-friends-content {
+    width: 708px;
+    margin: 0 auto;
+    padding: 60px 30px 70px 30px;
+  }
+
+  .friends-header {
+    padding: 20px 154px 30px 154px;
+  }
+
+  #scarlett, #freddie {
+    display: none;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 64px 40px 64px;
+    gap: 20px 40px;
   }
 }
 
