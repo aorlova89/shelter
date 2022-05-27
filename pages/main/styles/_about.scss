@@ -10,6 +10,7 @@
   padding-top: 80px;
   //margin: 0 0 100px 0;
   display: flex;
+  flex-direction: column-reverse;
 }
 
 .about-pets{
@@ -20,7 +21,7 @@
 }
 
 .content {
-  width: 35%;
+  //width: 35%;
 
   h3 {
     margin: 15px 20px 0 -5px;
@@ -34,15 +35,9 @@
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .content {
-    width: 100%;
-  }
-
   .about-content {
     padding: 42px 10px;
     text-align: center;
-    display: flex;
-    flex-direction: column-reverse;
 
     h3{
       margin: 0;
@@ -64,3 +59,15 @@
     background-size: contain;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .about-content {
+    padding: 80px 169px 100px 169px;
+  }
+
+  .about-pets {
+    margin-top: 80px;
+    background-position-x: center;
+  }
+}
+

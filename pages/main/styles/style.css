@@ -549,7 +549,6 @@ header {
   width: 100%;
   display: flex;
   margin: 60px 0;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -576,7 +575,6 @@ h1 {
 }
 
 .nav-menu {
-  width: 443px;
   height: 27px;
 }
 
@@ -634,10 +632,15 @@ hr {
     margin: 0;
   }
 }
+@media (min-width: 768px) and (max-width: 1279px) {
+  .header-content {
+    padding: 30px 30px 0 30px;
+    margin: 0;
+  }
+}
 .start-screen {
   background-image: url("../../../assets/images/start-screen-background.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .start-screen-puppy {
@@ -646,10 +649,6 @@ hr {
 
 .not-only {
   display: flex;
-}
-
-.not-only-content {
-  width: 42%;
 }
 
 .not-only-heading {
@@ -693,6 +692,37 @@ hr {
     background-position-x: right;
   }
 }
+@media (min-width: 768px) and (max-width: 1279px) {
+  .start-screen {
+    background-size: cover;
+  }
+
+  .not-only {
+    flex-direction: column;
+    padding: 18px 100px 0 100px;
+  }
+
+  .not-only-content {
+    padding: 0 55px;
+  }
+  .not-only-content h3 {
+    font-size: 44px;
+    line-height: 130%;
+    color: #FFFFFF;
+    letter-spacing: 0;
+  }
+  .not-only-content a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .start-screen-puppy {
+    height: 569px;
+    background-size: contain;
+    background-position-x: right;
+    margin-top: 100px;
+  }
+}
 .about {
   background: #FFFFFF;
 }
@@ -700,6 +730,7 @@ hr {
 .about-content {
   padding-top: 80px;
   display: flex;
+  flex-direction: column-reverse;
 }
 
 .about-pets {
@@ -708,9 +739,6 @@ hr {
   background-position-x: 175px;
 }
 
-.content {
-  width: 35%;
-}
 .content h3 {
   margin: 15px 20px 0 -5px;
   color: #545454;
@@ -722,15 +750,9 @@ hr {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .content {
-    width: 100%;
-  }
-
   .about-content {
     padding: 42px 10px;
     text-align: center;
-    display: flex;
-    flex-direction: column-reverse;
   }
   .about-content h3 {
     margin: 0;
@@ -749,6 +771,16 @@ hr {
     height: 353px;
     background-position-x: center;
     background-size: contain;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .about-content {
+    padding: 80px 169px 100px 169px;
+  }
+
+  .about-pets {
+    margin-top: 80px;
+    background-position-x: center;
   }
 }
 .our-friends {
@@ -806,6 +838,31 @@ hr {
     justify-content: center;
   }
 }
+@media (min-width: 768px) and (max-width: 1279px) {
+  #woody {
+    display: none;
+  }
+
+  .our-friends-content {
+    padding: 0 30px 100px 30px;
+  }
+
+  .left-arrow {
+    margin-right: 12px;
+  }
+
+  .right-arrow {
+    margin-left: 12px;
+  }
+
+  .our-friends-slider .cards {
+    gap: 45px;
+  }
+
+  .our-friends-btn {
+    margin-top: 60px;
+  }
+}
 .help {
   background: #FFFFFF;
 }
@@ -842,6 +899,11 @@ hr {
   align-items: center;
   justify-content: space-between;
 }
+.help-item .help-img {
+  width: 60px;
+  height: 60px;
+}
+
 div#food .help-img {
   background: url("../../../assets/icons/icon-pet-food.svg") no-repeat;
 }
@@ -900,13 +962,28 @@ div#sleeping-areas .help-img {
     height: 50px;
   }
 }
+@media (min-width: 768px) and (max-width: 1279px) {
+  .help-list {
+    padding: 0 69px 100px 69px;
+    justify-content: center;
+    gap: 52px 60px;
+  }
+
+  .help-content h3 {
+    padding: 80px 229px 60px 229px;
+  }
+
+  .help-item {
+    width: 170px;
+  }
+}
 .donation {
   background: #F6F6F6;
 }
 
 .donation-content {
-  padding: 80px 166px 100px 142px;
   display: flex;
+  flex-direction: column-reverse;
 }
 .donation-content h3 {
   margin: 0;
@@ -943,15 +1020,10 @@ div#sleeping-areas .help-img {
   background-position-x: center;
 }
 
-.donation-content-text {
-  width: 40%;
-}
-
 .credit-card {
   display: flex;
   align-items: center;
   padding: 7px 15px;
-  width: 90%;
   background: #F1CDB3;
   border-radius: 9px;
 }
@@ -972,17 +1044,11 @@ div#sleeping-areas .help-img {
 @media (min-width: 320px) and (max-width: 767px) {
   .donation-content {
     padding: 42px 10px;
-    display: flex;
-    flex-direction: column-reverse;
   }
   .donation-content span {
     display: block;
     padding: 0 10px;
     text-align: center;
-  }
-
-  .donation-content-text {
-    width: 100%;
   }
 
   h3 {
@@ -1015,25 +1081,31 @@ div#sleeping-areas .help-img {
     background-position-x: center;
   }
 }
+@media (min-width: 768px) and (max-width: 1279px) {
+  .donation-content-text {
+    padding: 80px 194px 60px 194px;
+  }
+
+  .credit-card {
+    margin: 20px 31px 20px 0;
+  }
+
+  .donation-content {
+    padding-bottom: 100px;
+  }
+}
 footer {
   background-image: url("../../../assets/images/start-screen-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.footer-content {
-  display: flex;
-  padding-top: 40px;
-}
 .footer-content h3 {
   margin: 0;
   color: #FFFFFF;
 }
 .footer-content h4 {
   margin: 0;
-}
-.footer-content .contacts {
-  margin-top: 17px;
 }
 .footer-content .contacts .email, .footer-content .contacts .phone {
   display: flex;
@@ -1044,7 +1116,7 @@ footer {
 }
 .footer-content .locations .location {
   display: flex;
-  margin-top: 40px;
+  margin-top: 34px;
 }
 .footer-content .locations h4 {
   width: 85%;
@@ -1081,7 +1153,7 @@ a {
 @media (min-width: 320px) and (max-width: 767px) {
   .footer-content {
     flex-direction: column;
-    padding: 13px 10px 0 10px;
+    padding: 30px 10px 0 10px;
     justify-content: center;
   }
 
@@ -1103,6 +1175,38 @@ a {
   }
   .locations h3 {
     margin: 0 15px;
+  }
+  .locations .location {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .footer-content {
+    padding: 30px 30px 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contacts, .locations {
+    order: 1;
+  }
+
+  .footer-puppy {
+    order: 2;
+  }
+
+  .contacts {
+    width: 288px;
+    padding-right: 60px;
+  }
+
+  .locations {
+    width: 288px;
+  }
+
+  .footer-puppy {
+    width: 300px;
   }
 }
 

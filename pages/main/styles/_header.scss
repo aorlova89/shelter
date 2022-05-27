@@ -11,7 +11,7 @@ header {
   width: 100%;
   display: flex;
   margin: 60px 0;
-  align-items: center;
+  //align-items: center;
   justify-content: space-between;
 }
 
@@ -39,7 +39,7 @@ h1{
 }
 
 .nav-menu {
-  width: 443px;
+  //width: 443px;
   height: 27px;
 }
 
@@ -95,6 +95,13 @@ hr {
 
   .header-content {
     padding: 30px 53px 0 10px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .header-content {
+    padding: 30px 30px 0 30px;
     margin: 0;
   }
 }

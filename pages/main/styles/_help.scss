@@ -47,8 +47,8 @@
   justify-content: space-between;
 
   .help-img {
-    //width: 60px;
-    //height: 60px;
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -108,5 +108,21 @@ div#sleeping-areas .help-img{
       height: 50px;
 
     }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .help-list {
+    padding: 0 69px 100px 69px;
+    justify-content: center;
+    gap: 52px 60px;
+  }
+
+  .help-content h3 {
+    padding: 80px 229px 60px 229px;
+  }
+
+  .help-item {
+    width: 170px;
   }
 }

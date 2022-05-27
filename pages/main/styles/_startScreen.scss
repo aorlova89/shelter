@@ -4,13 +4,13 @@
 .start-screen{
   background-image: url("../../../assets/images/start-screen-background.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  //background-size: cover;
   //height: 908px;
 }
 
 .start-screen-puppy{
-//  //width: 698px;
-//  //height: 728px;
+  //  //width: 698px;
+  //  //height: 728px;
   background: url("../../../assets/images/start-screen-puppy.png") no-repeat;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .not-only-content {
-  width: 42%;
+  //width: 42%;
 }
 
 .not-only-heading{
@@ -67,3 +67,40 @@
     background-position-x: right;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .start-screen{
+    background-size: cover;
+  }
+
+  .not-only {
+    flex-direction: column;
+    //align-items: center;
+    padding: 18px 100px 0 100px;
+  }
+
+  .not-only-content {
+    padding: 0 55px;
+
+
+    h3 {
+      font-size: 44px;
+      line-height: 130%;
+      color: colors.$color-light-xl;
+      letter-spacing: 0;
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .start-screen-puppy {
+    height: 569px;
+    background-size: contain;
+    background-position-x: right;
+    margin-top: 100px;
+  }
+}
+
