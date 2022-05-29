@@ -2,27 +2,22 @@
 
 
 .about{
-  //height: 588px;
   background: colors.$color-light-xl;
 }
 
 .about-content{
   padding-top: 80px;
-  //margin: 0 0 100px 0;
   display: flex;
   flex-direction: column-reverse;
 }
 
 .about-pets{
-  //width: 50%;
   height: 408px;
   background: url(../../../assets/images/about-pets.png) no-repeat;
   background-position-x: 175px;
 }
 
 .content {
-  //width: 35%;
-
   h3 {
     margin: 15px 20px 0 -5px;
     color: colors.$color-dark-l;
@@ -71,3 +66,17 @@
   }
 }
 
+@media (min-width: 1280px) {
+  .about-content {
+    flex-direction: row;
+    margin-bottom: 100px;
+
+    .about-pets {
+      width: 50%;
+    }
+
+    .content {
+      width: 35%;
+    }
+  }
+}

@@ -5,14 +5,9 @@ footer {
   background-image: url("../../../assets/images/start-screen-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
-  //height: 350px;
 }
 
 .footer-content{
-  //display: flex;
-  //padding-top: 40px;
-
   h3{
     margin: 0;
     color: colors.$color-light-xl;
@@ -23,45 +18,26 @@ footer {
   }
 
   .contacts {
-    //margin-top: 17px;
-
     .email, .phone {
       display: flex;
       margin-top: 40px;
     }
-
-    h3 {
-      //width: 70%;
-    }
-
   }
 
   .locations {
-    //margin-top: 17px;
     padding-bottom: 40px;
-    //margin-left: 10px; commented for small size
 
     .location {
       display: flex;
-    //44
-    //  .boston {
-    //    margin-top: 34px;
-      //}
-    }
-
-    h3 {
-      //width: 70%;
+      align-items: center;
     }
 
     h4 {
       width: 85%;
-      //width: 60%; commented for small screen
-
     }
   }
 
   .footer-puppy {
-    //width: 400px;
     height: 269px;
 
     background: url("../../../assets/images/footer-puppy.png") no-repeat center;
@@ -115,6 +91,10 @@ a {
   }
 
   .locations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     text-align: center;
     margin: auto;
     h3 {
@@ -125,11 +105,7 @@ a {
       margin-top: 40px;
 
       .location {
-        display: flex;
-        //44
-        //.boston {
-        //  margin-top: 34px;
-        //}
+        //display: flex;
       }
     }
   }
@@ -148,10 +124,13 @@ a {
       width: 300px;
       height: 310px;
       background-size: contain;
-
     }
 
     .locations {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
       width: 298px;
       padding-bottom: 55px;
 
@@ -174,4 +153,33 @@ a {
     padding-right: 50px;
   }
 
+}
+
+@media (min-width: 1280px) {
+  .footer-content {
+    padding-top: 40px;
+    display: flex;
+
+    .contacts, .locations {
+      padding: 16px 160px 60px 0;
+    }
+
+    .contacts {
+      width: 280px;
+    }
+
+    .locations {
+      width: 300px;
+
+      .location {
+        margin-top: 33px;
+      }
+    }
+
+    .footer-puppy {
+      width: 300px;
+      height: 310px;
+      background-size: contain;
+    }
+  }
 }

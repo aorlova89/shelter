@@ -104,3 +104,38 @@
   }
 }
 
+@media (min-width: 1280px) {
+  .center-aligned {
+    width: 1200px;
+    margin: auto;
+  }
+
+  .start-screen {
+    background-size: cover;
+  }
+
+  .not-only {
+    padding: 0 40px;
+
+    .not-only-content {
+      padding: 163px 42px 243px 0;
+
+      h2 {
+        margin: 0;
+        color: colors.$color-light-xl;
+        letter-spacing: 0;
+      }
+
+      .not-only-subheading {
+        margin: 42px 0;
+        width: 462px;
+      }
+    }
+
+    .start-screen-puppy {
+      height: 728px;
+      width: 698px;
+    }
+  }
+}
+

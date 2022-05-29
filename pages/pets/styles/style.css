@@ -353,12 +353,6 @@ h3 {
   line-height: 130%;
 }
 
-.h3-mobile {
-  font-size: 25px;
-  line-height: 32px;
-  text-align: center;
-}
-
 h4 {
   font-size: 20px;
   line-height: 115%;
@@ -556,6 +550,7 @@ footer {
 }
 .footer-content .locations .location {
   display: flex;
+  align-items: center;
 }
 .footer-content .locations h4 {
   width: 85%;
@@ -609,6 +604,9 @@ a {
   }
 
   .locations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     margin: auto;
   }
@@ -617,9 +615,6 @@ a {
   }
   .locations .location {
     margin-top: 40px;
-  }
-  .locations .location .location {
-    display: flex;
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -637,6 +632,9 @@ a {
     background-size: contain;
   }
   .footer-content .locations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 298px;
     padding-bottom: 55px;
   }
@@ -655,6 +653,29 @@ a {
   .contacts {
     width: 288px;
     padding-right: 50px;
+  }
+}
+@media (min-width: 1280px) {
+  .footer-content {
+    padding-top: 40px;
+    display: flex;
+  }
+  .footer-content .contacts, .footer-content .locations {
+    padding: 16px 160px 60px 0;
+  }
+  .footer-content .contacts {
+    width: 280px;
+  }
+  .footer-content .locations {
+    width: 300px;
+  }
+  .footer-content .locations .location {
+    margin-top: 33px;
+  }
+  .footer-content .footer-puppy {
+    width: 300px;
+    height: 310px;
+    background-size: contain;
   }
 }
 header {
