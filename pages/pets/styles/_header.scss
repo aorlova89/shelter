@@ -2,7 +2,6 @@
 
 
 header {
-  //width: 1200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,8 +20,8 @@ h1 {
 }
 
 .logo-title {
-  //margin-bottom: 9px;
   color: colors.$color-dark-l;
+  margin-bottom: 10px;
 }
 
 .logo-subtitle {
@@ -83,7 +82,6 @@ hr {
 
 @media (min-width: 320px) and (max-width: 767px) {
   h3 {
-    margin: 0;
     color: colors.$color-light-xl;
   }
 
@@ -93,7 +91,6 @@ hr {
 
   .header-content {
     padding: 0 53px 0 10px;
-
   }
 }
 
@@ -103,3 +100,10 @@ hr {
   }
 }
 
+@media (min-width: 1280px) {
+  .header-content {
+    .logo-subtitle {
+      margin-top: 10px;
+    }
+  }
+}

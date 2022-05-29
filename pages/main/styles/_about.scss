@@ -3,6 +3,7 @@
 
 .about{
   background: colors.$color-light-xl;
+  z-index: 15;
 }
 
 .about-content{
@@ -19,13 +20,12 @@
 
 .content {
   h3 {
-    margin: 15px 20px 0 -5px;
     color: colors.$color-dark-l;
   }
 }
 
 #about-p-1, #about-p-2 {
-  margin: 23px 0 0 -5px;
+  margin-top: 25px;
   color: colors.$color-dark-xl;
 }
 
@@ -33,18 +33,16 @@
   .about-content {
     padding: 42px 10px;
     text-align: center;
-
-    h3{
-      margin: 0;
-    }
   }
 
   #about-p-1 {
+    text-align: justify;
     margin: 25px 15px 22px 15px;
   }
 
   #about-p-2 {
-    margin: 0 15px
+    text-align: justify;
+    margin: 0 15px;
   }
 
   .about-pets {
@@ -61,7 +59,7 @@
   }
 
   .about-pets {
-    margin-top: 80px;
+    margin-top: 65px;
     background-position-x: center;
   }
 }

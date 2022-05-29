@@ -2,17 +2,12 @@
 
 
 footer {
-  background-image: url("/shelter/assets/images/start-screen-background.jpg");
-  //background-repeat: no-repeat;
-  //background-size: cover;
-
-  //height: 350px;
+  background-image: url("shelter/assets/images/start-screen-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footer-content{
-  display: flex;
-  padding-top: 40px;
-
   h3{
     margin: 0;
     color: colors.$color-light-xl;
@@ -23,61 +18,48 @@ footer {
   }
 
   .contacts {
-    margin-top: 17px;
-
     .email, .phone {
       display: flex;
       margin-top: 40px;
     }
-
-    h3 {
-      //width: 70%;
-    }
-
   }
 
   .locations {
-    //margin-top: 17px;
     padding-bottom: 40px;
-    //margin-left: 10px;
 
     .location {
       display: flex;
-      margin-top: 40px;
-      //margin-top: 34px;
-    }
-
-    h3 {
-      //width: 70%;
+      align-items: center;
     }
 
     h4 {
-      //width: 60%;
+      width: 85%;
     }
   }
 
   .footer-puppy {
-    //width: 400px;
-    height: 310px;
-    background: url("/shelter/assets/images/footer-puppy.png") no-repeat right;
+    height: 269px;
+
+    background: url("../../../assets/images/footer-puppy.png") no-repeat center;
+    background-size: contain;
   }
 
   .email-icon {
-    background: url("/shelter/assets/icons/mail.png") no-repeat;
+    background: url("../../../assets/icons/mail.png") no-repeat;
     width: 40px;
     height: 32px;
     margin-right: 20px;
   }
 
   .phone-icon {
-    background: url("/shelter/assets/icons/icon-phone.svg");
+    background: url("../../../assets/icons/icon-phone.svg");
     width: 40px;
     height: 32px;
     margin-right: 20px;
   }
 
   .location-icon {
-    background: url("/shelter/assets/icons/icon-marker.png") no-repeat;
+    background: url("../../../assets/icons/icon-marker.png") no-repeat;
     width: 22px;
     height: 32px;
     margin-right: 20px;
@@ -90,25 +72,9 @@ a {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .locations {
-    text-align: center;
-    margin: auto;
-    h3 {
-      margin: 0 15px;
-    }
-
-    h4 {
-      width: 85%;
-    }
-  }
-
-  .footer-puppy {
-    height: 269px;
-  }
-
   .footer-content {
     flex-direction: column;
-    padding: 13px 10px 0 10px;
+    padding: 30px 10px 0 10px;
     justify-content: center;
   }
 
@@ -124,4 +90,90 @@ a {
     margin-bottom: 40px;
   }
 
+  .locations {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    margin: auto;
+    h3 {
+      margin: 0 15px;
+    }
+
+    .location {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .footer-content {
+    width: 708px;
+    margin: 0 auto;
+    padding: 30px 30px 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .footer-puppy {
+      width: 300px;
+      height: 310px;
+      background-size: contain;
+    }
+
+    .locations {
+      display: flex;
+      flex-direction: column;
+
+      width: 298px;
+      padding-bottom: 55px;
+
+      .location {
+        margin-top: 33px;
+      }
+    }
+  }
+
+  .contacts, .locations {
+    order: 1;
+  }
+
+  .footer-puppy {
+    order: 2;
+  }
+
+  .contacts {
+    width: 288px;
+    padding-right: 50px;
+  }
+
+}
+
+@media (min-width: 1280px) {
+  .footer-content {
+    padding-top: 40px;
+    display: flex;
+
+    .contacts, .locations {
+      padding: 16px 160px 60px 0;
+    }
+
+    .contacts {
+      width: 280px;
+    }
+
+    .locations {
+      width: 300px;
+
+      .location {
+        margin-top: 33px;
+      }
+    }
+
+    .footer-puppy {
+      width: 300px;
+      height: 310px;
+      background-size: contain;
+    }
+  }
 }

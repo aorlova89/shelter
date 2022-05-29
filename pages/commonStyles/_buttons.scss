@@ -18,6 +18,7 @@ button:hover:enabled {
   background-color: colors.$color-primary-light;
   border-color: colors.$color-primary-light;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .primary-btn{

@@ -32,7 +32,7 @@ main {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-h1 {
+h1, h2, h3, h4 {
   margin: 0;
 }
 
@@ -346,6 +346,7 @@ h2, h3, h4, h5, .logo-title {
 h2 {
   font-size: 44px;
   line-height: 130%;
+  letter-spacing: 0;
 }
 
 h3 {
@@ -385,7 +386,7 @@ h5 {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  h3 {
+  h2 {
     font-size: 25px;
     line-height: 32px;
     text-align: center;
@@ -406,6 +407,7 @@ button:hover:enabled {
   background-color: #FDDCC4;
   border-color: #FDDCC4;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .primary-btn {
@@ -468,6 +470,7 @@ button:hover:enabled {
   background: #FFFFFF;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
+  transition: 0.3s;
 }
 .card:hover .secondary-btn {
   background: #FDDCC4;
@@ -535,11 +538,7 @@ footer {
 }
 
 .footer-content h3 {
-  margin: 0;
   color: #FFFFFF;
-}
-.footer-content h4 {
-  margin: 0;
 }
 .footer-content .contacts .email, .footer-content .contacts .phone {
   display: flex;
@@ -606,7 +605,6 @@ a {
   .locations {
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
     margin: auto;
   }
@@ -634,12 +632,11 @@ a {
   .footer-content .locations {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 298px;
     padding-bottom: 55px;
   }
   .footer-content .locations .location {
-    margin-top: 38px;
+    margin-top: 33px;
   }
 
   .contacts, .locations {
@@ -698,6 +695,7 @@ h1 {
 
 .logo-title {
   color: #545454;
+  margin-bottom: 10px;
 }
 
 .logo-subtitle {
@@ -756,7 +754,6 @@ hr {
 
 @media (min-width: 320px) and (max-width: 767px) {
   h3 {
-    margin: 0;
     color: #FFFFFF;
   }
 
@@ -771,6 +768,11 @@ hr {
 @media (min-width: 768px) and (max-width: 1279px) {
   .header-content {
     margin: 30px;
+  }
+}
+@media (min-width: 1280px) {
+  .header-content .logo-subtitle {
+    margin-top: 10px;
   }
 }
 @media (min-width: 1280px) {

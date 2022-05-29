@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Shelter</title>
-    <link rel="stylesheet" href="styles2/style.css">
-<!--    <link rel="stylesheet" href="styles/style.css">-->
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="module" src="script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -19,16 +19,35 @@
                         <div class="logo-subtitle">Shelter for pets in Boston</div>
                     </div>
                 </a>
-                <nav class="nav-menu">
-                    <ul>
-                        <li>
+                <div id="nav-menu-icon" onclick=expandNavBar()></div>
+                <nav id="nav-menu">
+                    <div class="shelter-logo-burger">
+                        <h1 class="logo-title">Cozy House</h1>
+                        <div class="logo-subtitle">Shelter for pets in Boston</div>
+                    </div>
+                    <div id="nav-menu-list">
+                        <div>
                             <a class="nav-menu-link" href="">About the shelter</a>
                             <hr>
-                        </li>
-                        <li><a class="nav-menu-link" href="/shelter/pages/pets">Our pets</a></li>
-                        <li><a class="nav-menu-link" href="#help">Help the shelter</a></li>
-                        <li><a class="nav-menu-link" href="#footer">Contacts</a></li>
-                    </ul>
+                        </div>
+                        <div><a class="nav-menu-link" href="/shelter/pages/pets">Our pets</a></div>
+                        <div><a class="nav-menu-link" href="#help">Help the shelter</a></div>
+                        <div><a class="nav-menu-link" href="#footer">Contacts</a></div>
+                    </div>
+
+                    <!--                    <ul id="nav-menu-list">-->
+                    <!--                        <li class="shelter-logo-burger">-->
+                    <!--                            <h1 class="logo-title">Cozy House</h1>-->
+                    <!--                            <div class="logo-subtitle">Shelter for pets in Boston</div>-->
+                    <!--                        </li>-->
+                    <!--                         <li>-->
+                    <!--                            <a class="nav-menu-link" href="">About the shelter</a>-->
+                    <!--                            <hr>-->
+                    <!--                        </li>-->
+                    <!--                        <li><a class="nav-menu-link" href="/shelter/pages/pets">Our pets</a></li>-->
+                    <!--                        <li><a class="nav-menu-link" href="#help">Help the shelter</a></li>-->
+                    <!--                        <li><a class="nav-menu-link" href="#footer">Contacts</a></li>-->
+                    <!--                    </ul>-->
                 </nav>
             </div>
         </header>
@@ -198,5 +217,22 @@
         </div>
     </footer>
 </div>
+<script>
+  function expandNavBar() {
+    let navMenu = document.getElementById("nav-menu");
+    let navMenuIcon = document.getElementById('nav-menu-icon');
+    let mainLogo = document.querySelector('.shelter-logo');
+
+    if (navMenu.style.display === "flex") {
+      navMenu.style.display = "none";
+      navMenuIcon.style.transform = 'rotate(0deg)';
+      mainLogo.style.display = 'block';
+    } else {
+      navMenu.style.display = "flex";
+      mainLogo.style.display = 'none';
+      navMenuIcon.style.transform = 'rotate(90deg)';
+    }
+  }
+</script>
 </body>
 </html>
