@@ -572,23 +572,8 @@ h1 {
   height: 27px;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
 .nav-menu-list {
   display: flex;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  padding: 12px;
 }
 
 .nav-menu-link {

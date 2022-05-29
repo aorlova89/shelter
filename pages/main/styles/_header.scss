@@ -42,25 +42,25 @@ h1{
 .nav-menu {
   height: 27px;
 }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
+//
+//ul {
+//  list-style-type: none;
+//  margin: 0;
+//  padding: 0;
+//  overflow: hidden;
+//}
 
 .nav-menu-list {
   display: flex;
 }
-
-li {
-  float: left;
-}
-
-li a {
-  padding: 12px;
-}
+//
+//li {
+//  float: left;
+//}
+//
+//li a {
+//  padding: 12px;
+//}
 
 .nav-menu-link{
   font-family: 'Arial', serif;
@@ -83,7 +83,6 @@ hr {
   border-width:0;
   background-color: colors.$color-primary;
   height: 2px;
-  //width: 85%;
   margin: auto;
 }
 

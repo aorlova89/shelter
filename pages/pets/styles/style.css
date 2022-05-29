@@ -713,21 +713,6 @@ h1 {
   height: 27px;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  padding: 12px;
-}
-
 .nav-menu-link {
   font-family: "Arial", serif;
   font-style: normal;
@@ -748,8 +733,22 @@ hr {
   border-width: 0;
   background-color: #F1CDB3;
   height: 2px;
-  width: 85%;
   margin: auto;
+}
+
+#nav-menu-icon {
+  display: none;
+}
+
+.shelter-logo-burger {
+  display: none;
+}
+
+#nav-menu-list {
+  display: flex;
+}
+#nav-menu-list div {
+  margin-left: 25px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -757,8 +756,47 @@ hr {
     color: #FFFFFF;
   }
 
-  .nav-menu {
-    display: none !important;
+  #nav-menu-icon {
+    display: block;
+    background: url("../../../assets/icons/burger-pets.png") no-repeat;
+    width: 30px;
+    height: 30px;
+    z-index: 11;
+    margin-right: 5px;
+  }
+
+  #nav-menu {
+    display: none;
+    background-color: #FAFAFA;
+    position: absolute;
+    top: 0;
+    height: 97%;
+    width: 320px;
+    right: 0;
+    z-index: 9;
+    flex-direction: column;
+  }
+  #nav-menu .shelter-logo-burger {
+    display: block;
+    margin: 30px 0 118px 10px;
+  }
+  #nav-menu #nav-menu-list {
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column;
+  }
+  #nav-menu #nav-menu-list div {
+    margin-top: 40px;
+    margin-left: 0;
+  }
+  #nav-menu .nav-menu-link {
+    font-family: "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 160%;
+    color: #545454;
+    margin-top: 40px;
   }
 
   .header-content {
