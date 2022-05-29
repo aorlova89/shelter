@@ -9,6 +9,12 @@
 
 @import "header";
 
+@media (min-width: 1280px) {
+  .center-aligned {
+    width: 1200px;
+    margin: auto;
+  }
+}
 
 .content-wrapper{
   width: 100%;
@@ -22,35 +28,15 @@
   bottom: 0;
 }
 
-//.center-aligned {
-//  width: 1200px;
-//  margin: auto;
-//}
-
 .our-friends{
   background: colors.$color-light-l;
-  //background-size: cover;
 }
 
 .our-friends-content {
-  //padding: 80px 0 100px 0;
-  //width: 1200px;
-
   h3 {
     margin: 0 auto;
-    //width: 400px;
-    //height: 90px;
     text-align: center;
-
     color: colors.$color-dark-l;
-  }
-
-  .cards-container{
-    //margin: 40px 0;
-    //display: grid;
-    //gap: 20px 40px;
-    //grid-template-columns: auto auto auto auto;
-    //padding: 15px 0;
   }
 
   .pets-navigation{
@@ -108,5 +94,18 @@
     flex-wrap: wrap;
     padding: 0 64px 40px 64px;
     gap: 20px 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .our-friends-content {
+    padding: 80px 0 100px 0;
+  }
+
+  .cards-container {
+    padding: 57px 0;
+    display: grid;
+    gap: 20px 40px;
+    grid-template-columns: auto auto auto auto;
   }
 }

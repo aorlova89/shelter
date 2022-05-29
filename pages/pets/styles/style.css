@@ -773,6 +773,12 @@ hr {
     margin: 30px;
   }
 }
+@media (min-width: 1280px) {
+  .center-aligned {
+    width: 1200px;
+    margin: auto;
+  }
+}
 .content-wrapper {
   width: 100%;
 }
@@ -848,6 +854,18 @@ hr {
     flex-wrap: wrap;
     padding: 0 64px 40px 64px;
     gap: 20px 40px;
+  }
+}
+@media (min-width: 1280px) {
+  .our-friends-content {
+    padding: 80px 0 100px 0;
+  }
+
+  .cards-container {
+    padding: 57px 0;
+    display: grid;
+    gap: 20px 40px;
+    grid-template-columns: auto auto auto auto;
   }
 }
 
