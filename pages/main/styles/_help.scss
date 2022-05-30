@@ -71,7 +71,7 @@ div#sleeping-areas .help-img{
   background: url("../../../assets/icons/icon-sleeping-area.svg") no-repeat;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 767px) {
   .help {
     h3 {
       padding: 42px 49px;
@@ -82,13 +82,14 @@ div#sleeping-areas .help-img{
     }
 
     .help-list {
+      width: 290px;
       padding: 0 15px 42px 15px;
       gap: 30px 30px;
       justify-content: space-between;
     }
 
     .help-item {
-      width: 44%;
+      width: 128px;
       height: 87px;
     }
 

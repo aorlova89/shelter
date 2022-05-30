@@ -30,13 +30,8 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 767px) {
   .our-friends {
-    //todo
-    //h3 {
-    //  margin-top: 0;
-    //}
-
     #jennifer, #woody {
       display: none;
     }
@@ -44,6 +39,10 @@
     .our-friends-content {
       padding: 42px 10px;
       text-align: center;
+
+      h3 {
+        margin-top: 0;
+      }
     }
 
     .our-friends-slider {
@@ -80,11 +79,6 @@
 
   .our-friends-content {
     padding: 0 30px 100px 30px;
-
-    //todo
-    //h3 {
-    //  margin-bottom: 0;
-    //}
 
     .our-friends-slider {
       margin: 55px 0;
