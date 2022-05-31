@@ -336,7 +336,7 @@ template {
   display: none;
 }
 
-h2, h3, h4, h5, .logo-title {
+h2, h3, h4, h5, .logo-title, .modal-window {
   font-family: "Georgia", serif;
   font-style: normal;
   font-weight: 400;
@@ -359,7 +359,7 @@ h4 {
   line-height: 115%;
 }
 
-h5 {
+h5, .modal-window {
   font-size: 15px;
   line-height: 110%;
 }
@@ -439,6 +439,11 @@ button:hover:enabled {
   background: url("/shelter/assets/icons/arrow.png") no-repeat center center;
   transform: rotate(180deg);
   filter: drop-shadow(0px -4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.close-popup {
+  background: url("/shelter/assets/icons/close-btn.png") no-repeat center center;
+  position: absolute;
 }
 
 .navigation-btn:disabled {

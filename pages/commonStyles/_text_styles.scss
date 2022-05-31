@@ -1,4 +1,4 @@
-h2, h3, h4, h5, .logo-title {
+h2, h3, h4, h5, .logo-title, .modal-window {
   font-family: 'Georgia', serif;
   font-style: normal;
   font-weight: 400;
@@ -21,7 +21,7 @@ h4 {
   line-height: 115%;
 }
 
-h5 {
+h5, .modal-window {
   font-size: 15px;
   line-height: 110%;
 }
@@ -54,5 +54,3 @@ h5 {
     text-align: center;
   }
 }
-
-

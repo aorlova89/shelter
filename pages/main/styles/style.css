@@ -336,7 +336,7 @@ template {
   display: none;
 }
 
-h2, h3, h4, h5, .logo-title {
+h2, h3, h4, h5, .logo-title, .modal-window {
   font-family: "Georgia", serif;
   font-style: normal;
   font-weight: 400;
@@ -359,7 +359,7 @@ h4 {
   line-height: 115%;
 }
 
-h5 {
+h5, .modal-window {
   font-size: 15px;
   line-height: 110%;
 }
@@ -439,6 +439,11 @@ button:hover:enabled {
   background: url("/shelter/assets/icons/arrow.png") no-repeat center center;
   transform: rotate(180deg);
   filter: drop-shadow(0px -4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.close-popup {
+  background: url("/shelter/assets/icons/close-btn.png") no-repeat center center;
+  position: absolute;
 }
 
 .navigation-btn:disabled {
@@ -879,6 +884,41 @@ hr {
   gap: 92px;
 }
 
+.our-friends-popup {
+  position: relative;
+  color: #000000;
+  margin: 52px 52px 0 0;
+}
+.our-friends-popup .popup-pet-img {
+  background: url("/shelter/assets/images/pets-jennifer.png") no-repeat;
+  background-size: cover;
+}
+.our-friends-popup .popup__wrapper {
+  display: flex;
+  background-color: #FAFAFA;
+  border-radius: 9px;
+}
+.our-friends-popup .popup-content {
+  display: flex;
+  flex-direction: column;
+}
+.our-friends-popup .popup-content .pet-properties {
+  padding-left: 15px;
+  margin-top: 5px;
+}
+.our-friends-popup .popup-content .pet-properties li {
+  font-family: "Georgia", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  margin-bottom: 5px;
+}
+.our-friends-popup .popup-content .pet-properties li::marker {
+  color: #F1CDB3;
+}
+
 @media (min-width: 0px) and (max-width: 767px) {
   .our-friends #jennifer, .our-friends #woody {
     display: none;
@@ -910,6 +950,35 @@ hr {
   .our-friends .our-friends-btn {
     padding: 15px 40px;
   }
+
+  .our-friends-popup {
+    width: 270px;
+    height: 393px;
+  }
+  .our-friends-popup h3 {
+    color: #000000;
+  }
+  .our-friends-popup .close-popup {
+    top: -52px;
+    right: 1px;
+  }
+  .our-friends-popup .popup__wrapper {
+    width: 240px;
+  }
+  .our-friends-popup .popup-content {
+    width: 240px;
+  }
+  .our-friends-popup .popup-content .popup__pet-name, .our-friends-popup .popup-content .popup__pet-description {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .our-friends-popup .popup-content h5 {
+    font-size: 13px;
+    margin-left: 10px;
+  }
+  .our-friends-popup .popup-content li {
+    margin-left: 10px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
   #woody {
@@ -934,6 +1003,33 @@ hr {
   .our-friends-slider .cards {
     gap: 45px;
   }
+
+  .our-friends-popup {
+    width: 682px;
+    height: 402px;
+  }
+  .our-friends-popup .popup__wrapper {
+    width: 630px;
+  }
+  .our-friends-popup .close-popup {
+    top: -52px;
+    right: 7px;
+  }
+  .our-friends-popup .popup-pet-img {
+    width: 350px;
+    height: 350px;
+  }
+  .our-friends-popup .popup-content {
+    width: 280px;
+    margin: 10px 9px 37px 35px;
+  }
+  .our-friends-popup .popup-content h4 {
+    margin: 10px 0 10px;
+  }
+  .our-friends-popup .popup-content h5 {
+    font-size: 13px;
+    margin: 11px 0 14px 0;
+  }
 }
 @media (min-width: 1280px) {
   .our-friends-content {
@@ -943,7 +1039,42 @@ hr {
     width: 100%;
     margin: 55px 0;
   }
+
+  .our-friends-popup {
+    width: 900px;
+    height: 500px;
+  }
+  .our-friends-popup .close-popup {
+    top: -52px;
+    right: -42px;
+  }
+  .our-friends-popup .popup-pet-img {
+    width: 500px;
+    height: 500px;
+  }
+  .our-friends-popup .popup-content {
+    width: 350px;
+    margin: 50px 20px 88px 29px;
+  }
+  .our-friends-popup .popup-content h5 {
+    word-wrap: break-word;
+    margin: 0 0 40px 0;
+  }
+  .our-friends-popup .popup-content .popup__pet-description {
+    margin: 10px 0 40px 0;
+  }
+  .our-friends-popup .popup-content .pet-properties {
+    padding-left: 15px;
+    margin-top: 5px;
+  }
+  .our-friends-popup .popup-content .pet-properties li {
+    margin-bottom: 10px;
+  }
 }
+.our-friends-popup:hover {
+  box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+
 .help {
   background: #FFFFFF;
 }
@@ -1130,19 +1261,17 @@ div#sleeping-areas .help-img {
     padding: 0 10px;
     text-align: justify;
   }
-
-  h3 {
+  .donation-content h3 {
     font-size: 25px;
+    text-align: center;
+  }
+  .donation-content h5 {
+    font-size: 14px;
     text-align: center;
   }
 
   h4 {
     font-size: 15px;
-  }
-
-  h5 {
-    font-size: 14px;
-    text-align: center;
   }
 
   .credit-card {
