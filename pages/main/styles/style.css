@@ -441,7 +441,7 @@ button:hover:enabled {
   filter: drop-shadow(0px -4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.close-popup {
+.modal-close {
   background: url("/shelter/assets/icons/close-btn.png") no-repeat center center;
   position: absolute;
 }
@@ -504,38 +504,192 @@ button:hover:enabled {
   border-radius: 9px 9px 0 0;
 }
 
-div#katrine .pet-img {
+div#Katrine .pet-img {
   background: url("/shelter/assets/images/pets-katrine.png") no-repeat;
 }
 
-div#jennifer .pet-img {
+div#Jennifer .pet-img {
   background: url("/shelter/assets/images/pets-jennifer.png") no-repeat;
 }
 
-div#woody .pet-img {
+div#Woody .pet-img {
   background: url("/shelter/assets/images/pets-woody.png") no-repeat;
 }
 
-div#sophia .pet-img {
+div#Sophia .pet-img {
   background: url("/shelter/assets/images/pets-sofia.png") no-repeat;
 }
 
-div#timmy .pet-img {
+div#Timmy .pet-img {
   background: url("/shelter/assets/images/pets-timmy.png") no-repeat;
 }
 
-div#charly .pet-img {
+div#Charly .pet-img {
   background: url("/shelter/assets/images/pets-charly.png") no-repeat;
 }
 
-div#scarlett .pet-img {
+div#Scarlett .pet-img {
   background: url("/shelter/assets/images/pets-scarlett.png") no-repeat;
 }
 
-div#freddie .pet-img {
+div#Freddie .pet-img {
   background: url("/shelter/assets/images/pets-freddie.png") no-repeat;
 }
 
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal.open {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+.modal-bg {
+  position: absolute;
+  background: rgba(41, 41, 41, 0.6);
+  width: 100%;
+  height: 100%;
+}
+.modal-container {
+  border-radius: 10px;
+  position: relative;
+  color: #000000;
+}
+.modal-container .popup-pet-img {
+  background: url("/shelter/assets/images/pets-jennifer.png") no-repeat;
+  background-size: cover;
+}
+.modal-container .popup__wrapper {
+  display: flex;
+  background-color: #FAFAFA;
+  border-radius: 9px;
+}
+.modal-container .popup-content {
+  display: flex;
+  flex-direction: column;
+}
+.modal-container .popup-content .pet-properties {
+  padding-left: 15px;
+  margin-top: 5px;
+}
+.modal-container .popup-content .pet-properties li {
+  font-family: "Georgia", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  margin-bottom: 5px;
+}
+.modal-container .popup-content .pet-properties li::marker {
+  color: #F1CDB3;
+}
+.modal-close {
+  position: absolute;
+  cursor: pointer;
+}
+
+.modal:hover {
+  box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .modal-close {
+    top: -52px;
+    right: 0;
+  }
+
+  .modal-container {
+    width: 270px;
+    height: 393px;
+  }
+  .modal-container h3 {
+    color: #000000;
+  }
+  .modal-container .popup__wrapper {
+    width: 240px;
+  }
+  .modal-container .popup-content {
+    width: 240px;
+  }
+  .modal-container .popup-content .popup__pet-name, .modal-container .popup-content .popup__pet-description {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .modal-container .popup-content h5 {
+    font-size: 13px;
+    margin-left: 10px;
+  }
+  .modal-container .popup-content li {
+    margin-left: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .modal-close {
+    top: -52px;
+    right: 9px;
+  }
+  .modal-container {
+    width: 682px;
+    height: 402px;
+  }
+  .modal-container .popup__wrapper {
+    width: 630px;
+  }
+  .modal-container .popup-pet-img {
+    width: 350px;
+    height: 350px;
+  }
+  .modal-container .popup-content {
+    width: 280px;
+    margin: 10px 9px 37px 35px;
+  }
+  .modal-container .popup-content h4 {
+    margin: 10px 0 10px;
+  }
+  .modal-container .popup-content h5 {
+    font-size: 13px;
+    margin: 11px 0 14px 0;
+  }
+}
+@media (min-width: 1280px) {
+  .modal-close {
+    right: -42px;
+    top: -52px;
+  }
+  .modal-container .popup-pet-img {
+    width: 500px;
+    height: 500px;
+  }
+  .modal-container .popup-content {
+    width: 350px;
+    margin: 50px 20px 88px 29px;
+  }
+  .modal-container .popup-content h5 {
+    word-wrap: break-word;
+    margin: 0 0 40px 0;
+  }
+  .modal-container .popup-content .popup__pet-description {
+    margin: 10px 0 40px 0;
+  }
+  .modal-container .popup-content .pet-properties {
+    padding-left: 15px;
+    margin-top: 5px;
+  }
+  .modal-container .popup-content .pet-properties li {
+    margin-bottom: 10px;
+  }
+}
 header {
   display: flex;
   align-items: center;
@@ -884,43 +1038,8 @@ hr {
   gap: 92px;
 }
 
-.our-friends-popup {
-  position: relative;
-  color: #000000;
-  margin: 52px 52px 0 0;
-}
-.our-friends-popup .popup-pet-img {
-  background: url("/shelter/assets/images/pets-jennifer.png") no-repeat;
-  background-size: cover;
-}
-.our-friends-popup .popup__wrapper {
-  display: flex;
-  background-color: #FAFAFA;
-  border-radius: 9px;
-}
-.our-friends-popup .popup-content {
-  display: flex;
-  flex-direction: column;
-}
-.our-friends-popup .popup-content .pet-properties {
-  padding-left: 15px;
-  margin-top: 5px;
-}
-.our-friends-popup .popup-content .pet-properties li {
-  font-family: "Georgia", serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 110%;
-  letter-spacing: 0.06em;
-  margin-bottom: 5px;
-}
-.our-friends-popup .popup-content .pet-properties li::marker {
-  color: #F1CDB3;
-}
-
 @media (min-width: 0px) and (max-width: 767px) {
-  .our-friends #jennifer, .our-friends #woody {
+  .our-friends #Jennifer, .our-friends #Woody {
     display: none;
   }
   .our-friends .our-friends-content {
@@ -950,38 +1069,9 @@ hr {
   .our-friends .our-friends-btn {
     padding: 15px 40px;
   }
-
-  .our-friends-popup {
-    width: 270px;
-    height: 393px;
-  }
-  .our-friends-popup h3 {
-    color: #000000;
-  }
-  .our-friends-popup .close-popup {
-    top: -52px;
-    right: 1px;
-  }
-  .our-friends-popup .popup__wrapper {
-    width: 240px;
-  }
-  .our-friends-popup .popup-content {
-    width: 240px;
-  }
-  .our-friends-popup .popup-content .popup__pet-name, .our-friends-popup .popup-content .popup__pet-description {
-    margin-top: 10px;
-    text-align: center;
-  }
-  .our-friends-popup .popup-content h5 {
-    font-size: 13px;
-    margin-left: 10px;
-  }
-  .our-friends-popup .popup-content li {
-    margin-left: 10px;
-  }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
-  #woody {
+  #Woody {
     display: none;
   }
 
@@ -1003,33 +1093,6 @@ hr {
   .our-friends-slider .cards {
     gap: 45px;
   }
-
-  .our-friends-popup {
-    width: 682px;
-    height: 402px;
-  }
-  .our-friends-popup .popup__wrapper {
-    width: 630px;
-  }
-  .our-friends-popup .close-popup {
-    top: -52px;
-    right: 7px;
-  }
-  .our-friends-popup .popup-pet-img {
-    width: 350px;
-    height: 350px;
-  }
-  .our-friends-popup .popup-content {
-    width: 280px;
-    margin: 10px 9px 37px 35px;
-  }
-  .our-friends-popup .popup-content h4 {
-    margin: 10px 0 10px;
-  }
-  .our-friends-popup .popup-content h5 {
-    font-size: 13px;
-    margin: 11px 0 14px 0;
-  }
 }
 @media (min-width: 1280px) {
   .our-friends-content {
@@ -1039,42 +1102,7 @@ hr {
     width: 100%;
     margin: 55px 0;
   }
-
-  .our-friends-popup {
-    width: 900px;
-    height: 500px;
-  }
-  .our-friends-popup .close-popup {
-    top: -52px;
-    right: -42px;
-  }
-  .our-friends-popup .popup-pet-img {
-    width: 500px;
-    height: 500px;
-  }
-  .our-friends-popup .popup-content {
-    width: 350px;
-    margin: 50px 20px 88px 29px;
-  }
-  .our-friends-popup .popup-content h5 {
-    word-wrap: break-word;
-    margin: 0 0 40px 0;
-  }
-  .our-friends-popup .popup-content .popup__pet-description {
-    margin: 10px 0 40px 0;
-  }
-  .our-friends-popup .popup-content .pet-properties {
-    padding-left: 15px;
-    margin-top: 5px;
-  }
-  .our-friends-popup .popup-content .pet-properties li {
-    margin-bottom: 10px;
-  }
 }
-.our-friends-popup:hover {
-  box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
-}
-
 .help {
   background: #FFFFFF;
 }
