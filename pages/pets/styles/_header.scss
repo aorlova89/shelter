@@ -51,7 +51,7 @@ h1 {
   text-decoration: none;
 }
 
-.nav-menu-link:hover, .nav-menu-link:active {
+.nav-menu-link:hover, .nav-menu-link:active, .active-menu-link {
   color: colors.$color-dark-3xl;
   text-decoration: none;
 }
@@ -67,6 +67,7 @@ hr {
 #nav-menu-icon {
   display: none;
 }
+
 .shelter-logo-burger{
   display: none;
 }
@@ -92,15 +93,19 @@ hr {
     z-index: 11;
     margin-right: 5px;
     margin-top: 10px;
+    transform: rotate(0deg);
+  }
+
+  #nav-menu-icon.rotated {
+    transform: rotate(90deg);
   }
 
   #nav-menu {
-    display: none;
+    visibility: hidden;
+    transition: visibility 0s 0.5s;
     background-color: colors.$color-light-s;
-
     position: absolute;
     top: 0;
-    height: 97%;
     width: 320px;
     right: 0;
     z-index: 9;
@@ -132,10 +137,28 @@ hr {
       font-weight: 400;
       font-size: 32px;
       line-height: 160%;
-      color: colors.$color-dark-l;
+      //color: colors.$color-dark-l;
       margin-top: 40px;
     }
   }
+
+  #nav-menu.visible {
+    transition: visibility 0s 0s;
+    visibility: visible;
+    height: 97%;
+    opacity: 1;
+  }
+
+  .nav-menu-wrapper {
+    transition: transform 0.5s 0s;
+    transform: translateY(-720px);
+  }
+
+  .visible .nav-menu-wrapper {
+    transition: transform 0.5s 0.5s;
+    transform: translateY(0px);
+  }
+
 
   .header-content {
     padding: 0 53px 0 10px;

@@ -709,6 +709,10 @@ header {
   width: 186px;
 }
 
+.shelter-logo-hidden {
+  visibility: hidden;
+}
+
 h1 {
   color: #F1CDB3;
 }
@@ -750,6 +754,10 @@ h1 {
   text-decoration: none;
 }
 
+.active-menu-link {
+  color: #FAFAFA;
+}
+
 hr {
   color: #F1CDB3;
   border-width: 0;
@@ -760,6 +768,7 @@ hr {
 
 #nav-menu-icon {
   display: none;
+  transition: transform 0.5s;
 }
 
 .shelter-logo-burger {
@@ -782,6 +791,11 @@ hr {
     z-index: 11;
     margin-right: 5px;
     margin-top: 10px;
+    transform: rotate(0deg);
+  }
+
+  #nav-menu-icon.rotated {
+    transform: rotate(90deg);
   }
 
   h3 {
@@ -789,11 +803,11 @@ hr {
   }
 
   #nav-menu {
-    display: none;
+    visibility: hidden;
+    transition: visibility 0s 0.5s;
     background-color: #292929;
     position: absolute;
     top: 0;
-    height: 97%;
     width: 320px;
     right: 0;
     z-index: 9;
@@ -818,8 +832,24 @@ hr {
     font-weight: 400;
     font-size: 32px;
     line-height: 160%;
-    color: #CDCDCD;
     margin-top: 40px;
+  }
+
+  #nav-menu.visible {
+    transition: visibility 0s 0s;
+    visibility: visible;
+    height: 97%;
+    opacity: 1;
+  }
+
+  .nav-menu-wrapper {
+    transition: transform 0.5s 0s;
+    transform: translateY(-720px);
+  }
+
+  .visible .nav-menu-wrapper {
+    transition: transform 0.5s 0.5s;
+    transform: translateY(0px);
   }
 
   .header-content {
@@ -1493,6 +1523,9 @@ a {
     height: 310px;
     background-size: contain;
   }
+}
+.scroll-disabled {
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
