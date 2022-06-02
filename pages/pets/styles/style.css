@@ -934,11 +934,11 @@ hr {
   #nav-menu {
     visibility: hidden;
     transition: visibility 0s 0.5s;
-    background-color: #FAFAFA;
     position: absolute;
     top: 0;
-    width: 320px;
     right: 0;
+    height: 100%;
+    width: 100%;
     z-index: 9;
     flex-direction: column;
   }
@@ -947,7 +947,6 @@ hr {
     margin: 30px 0 118px 10px;
   }
   #nav-menu #nav-menu-list {
-    margin: 0 auto;
     text-align: center;
     flex-direction: column;
   }
@@ -967,6 +966,10 @@ hr {
     margin-top: 40px;
   }
 
+  #nav-menu-list:last-child {
+    margin-bottom: 50px;
+  }
+
   #nav-menu.visible {
     transition: visibility 0s 0s;
     visibility: visible;
@@ -975,13 +978,23 @@ hr {
   }
 
   .nav-menu-wrapper {
+    width: 320px;
+    float: right;
     transition: transform 0.5s 0s;
     transform: translateY(-720px);
+    background-color: #FAFAFA;
   }
 
   .visible .nav-menu-wrapper {
     transition: transform 0.5s 0.5s;
     transform: translateY(0px);
+  }
+
+  .nav-menu-bg {
+    position: absolute;
+    background: rgba(41, 41, 41, 0.6);
+    width: 100vw;
+    height: 100vh;
   }
 
   .header-content {

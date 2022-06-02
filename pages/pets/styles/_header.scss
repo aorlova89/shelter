@@ -103,11 +103,11 @@ hr {
   #nav-menu {
     visibility: hidden;
     transition: visibility 0s 0.5s;
-    background-color: colors.$color-light-s;
     position: absolute;
     top: 0;
-    width: 320px;
     right: 0;
+    height: 100%;
+    width: 100%;
     z-index: 9;
     flex-direction: column;
 
@@ -117,7 +117,7 @@ hr {
     }
 
     #nav-menu-list {
-      margin: 0 auto;
+      //margin: 0 auto;
       text-align: center;
       flex-direction: column;
 
@@ -142,6 +142,10 @@ hr {
     }
   }
 
+  #nav-menu-list:last-child {
+    margin-bottom: 50px;
+  }
+
   #nav-menu.visible {
     transition: visibility 0s 0s;
     visibility: visible;
@@ -150,8 +154,11 @@ hr {
   }
 
   .nav-menu-wrapper {
+    width: 320px;
+    float: right;
     transition: transform 0.5s 0s;
     transform: translateY(-720px);
+    background-color: colors.$color-light-s;
   }
 
   .visible .nav-menu-wrapper {
@@ -159,6 +166,12 @@ hr {
     transform: translateY(0px);
   }
 
+  .nav-menu-bg {
+    position: absolute;
+    background: rgba(41, 41, 41, 0.6);
+    width: 100vw;
+    height: 100vh;
+  };
 
   .header-content {
     padding: 0 53px 0 10px;

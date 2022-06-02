@@ -26,10 +26,3 @@ navMenuBackground.addEventListener('click', function (event){
   expandNavBar();
 });
 
-/*
-exit.addEventListener('click', function (event) {
-      event.preventDefault();
-      modal.classList.remove('open');
-      body.style.overflow = "auto";
-    });
- */
