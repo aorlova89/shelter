@@ -764,6 +764,7 @@ hr {
   background-color: #F1CDB3;
   height: 2px;
   margin: auto;
+  width: 250px;
 }
 
 #nav-menu-icon {
@@ -805,10 +806,10 @@ hr {
   #nav-menu {
     visibility: hidden;
     transition: visibility 0s 0.5s;
-    background-color: #292929;
     position: absolute;
     top: 0;
-    width: 320px;
+    height: 100%;
+    width: 100%;
     right: 0;
     z-index: 9;
     flex-direction: column;
@@ -825,6 +826,9 @@ hr {
   #nav-menu #nav-menu-list div {
     margin-top: 40px;
     margin-left: 0;
+  }
+  #nav-menu #nav-menu-list:last-child {
+    margin-bottom: 50px;
   }
   #nav-menu .nav-menu-link {
     font-family: "Arial", sans-serif;
@@ -843,6 +847,9 @@ hr {
   }
 
   .nav-menu-wrapper {
+    background-color: #292929;
+    width: 320px;
+    float: right;
     transition: transform 0.5s 0s;
     transform: translateY(-720px);
   }
@@ -850,6 +857,13 @@ hr {
   .visible .nav-menu-wrapper {
     transition: transform 0.5s 0.5s;
     transform: translateY(0px);
+  }
+
+  .nav-menu-bg {
+    position: absolute;
+    background: rgba(41, 41, 41, 0.6);
+    width: 100vw;
+    height: 100vh;
   }
 
   .header-content {

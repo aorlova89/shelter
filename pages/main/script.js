@@ -19,3 +19,17 @@ cards.forEach(function (trigger) {
 
 let navMenuIcon = document.getElementById('nav-menu-icon');
 navMenuIcon.addEventListener('click', expandNavBar);
+
+let navMenuBackground = document.querySelector('.nav-menu-exit');
+navMenuBackground.addEventListener('click', function (event){
+  event.preventDefault();
+  expandNavBar();
+});
+
+/*
+exit.addEventListener('click', function (event) {
+      event.preventDefault();
+      modal.classList.remove('open');
+      body.style.overflow = "auto";
+    });
+ */
