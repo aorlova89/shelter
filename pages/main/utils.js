@@ -11,6 +11,7 @@ let expandNavBar = () => {
 }
 
 let buildModal = (pet) => {
+  console.log(pet)
   const body = document.querySelector("body");
   let petImg = document.querySelector('.modal .popup-pet-img');
   let petName = document.querySelector('.modal .popup__pet-name');
@@ -46,4 +47,29 @@ let buildModal = (pet) => {
   });
 }
 
-export {expandNavBar, buildModal};
+let buildCard = (pet) => {
+  let card = document.createElement('div');
+  card.id = pet.name;
+  card.classList.add('card');
+
+  let petImage = document.createElement('div');
+  petImage.classList.add('pet-img');
+  petImage.style.backgroundImage = `url(\"/${pet.img}\") no-repeat`;
+  // petImg.style.backgroundSize = 'cover';
+
+  let petName = document.createElement('span');
+  petName.classList.add('pet-name');
+  petName.innerText = pet.name;
+
+  let learnMoreBtn = document.createElement('button');
+  learnMoreBtn.classList.add('secondary-btn');
+  learnMoreBtn.innerText = 'Learn more';
+
+  card.appendChild(petImage);
+  card.appendChild(petName);
+  card.appendChild(learnMoreBtn);
+
+  return card;
+}
+
+export {expandNavBar, buildModal, buildCard};

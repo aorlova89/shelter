@@ -5,6 +5,7 @@
     <title>Shelter - Our pets</title>
     <link rel="stylesheet" href="styles/style.css">
     <script type="module" src="../main/script.js"></script>
+    <script type="module" src="script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -42,46 +43,6 @@
                     <h3>Our friends who</br>are looking for a house</h3>
                 </div>
                 <div class="cards-container">
-                    <div class="card" id="Katrine">
-                        <div class="pet-img"></div>
-                        <span class="pet-name">Katrine</span>
-                        <button class="secondary-btn">Learn more</button>
-                    </div>
-                    <div class="card" id="Jennifer">
-                        <div class="pet-img"></div>
-                        <span class="pet-name">Jennifer</span>
-                        <button class="secondary-btn">Learn more</button>
-                    </div>
-                    <div class="card" id="Woody">
-                        <div class="pet-img"></div>
-                        <span class="pet-name">Woody</span>
-                        <button class="secondary-btn">Learn more</button>
-                    </div>
-                    <div class="card" id="Sophia">
-                        <div class="pet-img"></div>
-                        <span class="pet-name">Sophia</span>
-                        <button class="secondary-btn">Learn more</button>
-                    </div>
-                    <div class="card" id="Timmy">
-                        <div class="pet-img"></div>
-                        <span class="pet-name">Timmy</span>
-                        <button class="secondary-btn">Learn more</button>
-                    </div>
-                    <div class="card" id="Charly">
-                        <div class="pet-img"></div>
-                        <span class="pet-name">Charly</span>
-                        <button class="secondary-btn">Learn more</button>
-                    </div>
-                    <div class="card" id="Scarlett">
-                        <div class="pet-img"></div>
-                        <span class="pet-name">Scarlett</span>
-                        <button class="secondary-btn">Learn more</button>
-                    </div>
-                    <div class="card" id="Freddie">
-                        <div class="pet-img"></div>
-                        <span class="pet-name">Freddie</span>
-                        <button class="secondary-btn">Learn more</button>
-                    </div>
                     <div class="modal">
                         <div class="modal-bg modal-exit"></div>
                         <div class="modal-container">
@@ -104,8 +65,8 @@
                     </div>
                 </div>
                 <div class="pets-navigation">
-                    <button class="navigation-btn" id="go-to-first" disabled><<</button>
-                    <button class="navigation-btn" id="go-back" disabled><</button>
+                    <button class="navigation-btn" id="go-to-first"><<</button>
+                    <button class="navigation-btn" id="go-back"><</button>
                     <button class="navigation-btn current" id="current">1</button>
                     <button class="navigation-btn go-next" id="go-next">></button>
                     <button class="navigation-btn go-to-last" id="go-to-last">>></button>
@@ -121,10 +82,10 @@
                             <h4 class="popup__pet-description">Dog - Labrador</h4>
                             <h5>Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</h5>
                             <ul class="pet-properties">
-                                <li class=".modal-window"><b>Age:</b> 2 months</li>
-                                <li class=".modal-window"><b>Inoculations:</b> none</li>
-                                <li class=".modal-window"><b>Diseases:</b> none</li>
-                                <li class=".modal-window"><b>Parasites:</b> none</li>
+                                <li class=".modal-window"><b>Age: </b><span class="age">2 months</span></li>
+                                <li class=".modal-window"><b>Inoculations: </b><span class="inoculations">none</span></li>
+                                <li class=".modal-window"><b>Diseases: </b><span class="diseases">none</span></li>
+                                <li class=".modal-window"><b>Parasites: </b><span class="parasites">none</span></li>
                             </ul>
                         </div>
                     </div>
@@ -184,23 +145,5 @@
         </footer>
     </div>
 </div>
-
-<script>
-  function expandNavBar() {
-    let navMenu = document.getElementById("nav-menu");
-    let navMenuIcon = document.getElementById('nav-menu-icon');
-    let mainLogo = document.querySelector('.shelter-logo');
-
-    if (navMenu.style.display === "flex") {
-      navMenu.style.display = "none";
-      navMenuIcon.style.transform = 'rotate(0deg)';
-      mainLogo.style.display = 'block';
-    } else {
-      navMenu.style.display = "flex";
-      mainLogo.style.display = 'none';
-      navMenuIcon.style.transform = 'rotate(90deg)';
-    }
-  }
-</script>
 </body>
 </html>
