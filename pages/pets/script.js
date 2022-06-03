@@ -9,7 +9,6 @@ let adjustedPets = [];
 for (let i = 0; i < 6; i++) {
   adjustedPets.push(...[...pets].sort( () => 0.5 - Math.random()));
 }
-console.log(window.screen.availWidth);
 
 (function () {
   "use strict";
@@ -30,7 +29,7 @@ console.log(window.screen.availWidth);
     } else if (screenSize > 767) {
       cardsPerPage = 6;
     } else {
-      cardsPerPage = 3
+      cardsPerPage = 3;
     }
 
     this.init = function() {

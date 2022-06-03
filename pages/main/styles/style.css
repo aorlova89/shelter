@@ -764,7 +764,6 @@ hr {
   background-color: #F1CDB3;
   height: 2px;
   margin: auto;
-  width: 250px;
 }
 
 #nav-menu-icon {
@@ -793,6 +792,10 @@ hr {
     margin-right: 5px;
     margin-top: 10px;
     transform: rotate(0deg);
+  }
+
+  hr {
+    width: 250px;
   }
 
   #nav-menu-icon.rotated {
@@ -1083,9 +1086,6 @@ hr {
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
-  .our-friends #Jennifer, .our-friends #Woody {
-    display: none;
-  }
   .our-friends .our-friends-content {
     padding: 42px 10px;
     text-align: center;
@@ -1115,10 +1115,6 @@ hr {
   }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
-  #Woody {
-    display: none;
-  }
-
   .our-friends-content {
     padding: 0 30px 100px 30px;
   }

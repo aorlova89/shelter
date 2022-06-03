@@ -77,7 +77,6 @@ hr {
   background-color: colors.$color-primary;
   height: 2px;
   margin: auto;
-  width: 250px;
 }
 
 #nav-menu-icon {
@@ -107,6 +106,10 @@ hr {
     margin-right: 5px;
     margin-top: 10px;
     transform: rotate(0deg);
+  }
+
+  hr {
+    width: 250px;
   }
 
   #nav-menu-icon.rotated {
