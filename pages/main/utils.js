@@ -51,7 +51,7 @@ let buildCard = (pet) => {
   let card = document.createElement('div');
   card.id = pet.name;
   card.classList.add('card');
-
+  
   let petImage = document.createElement('div');
   petImage.classList.add('pet-img');
   petImage.style.backgroundImage = `url(\"/${pet.img}\") no-repeat`;

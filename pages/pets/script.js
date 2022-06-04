@@ -4,10 +4,31 @@ import {buildCard, buildModal} from "../main/utils.js";
 let petsJson = await fetch('../../assets/pets.json');
 let pets = await petsJson.json();
 
+let numberOfPages;
+let cardsPerPage;
+let screenSize = window.screen.availWidth;
+
+if (screenSize > 1279) {
+  numberOfPages = 6;
+} else if (screenSize > 767) {
+  numberOfPages = 8;
+} else {
+  numberOfPages = 16;
+}
+
+if (screenSize > 1279) {
+  cardsPerPage = 8;
+} else if (screenSize > 767) {
+  cardsPerPage = 6;
+} else {
+  cardsPerPage = 3;
+}
+
 let adjustedPets = [];
 
-for (let i = 0; i < 6; i++) {
-  adjustedPets.push(...[...pets].sort( () => 0.5 - Math.random()));
+for (let i = 0; i < numberOfPages; i++) {
+  let tmp = [...pets].sort( () => 0.5 - Math.random());
+  adjustedPets.push(...tmp.slice(0, cardsPerPage));
 }
 
 (function () {
@@ -22,15 +43,6 @@ for (let i = 0; i < 6; i++) {
     firstButton.setAttribute('disabled', '');
 
     let currentPage = 1;
-    let cardsPerPage;
-    let screenSize = window.screen.availWidth;
-    if (screenSize > 1279) {
-      cardsPerPage = 8;
-    } else if (screenSize > 767) {
-      cardsPerPage = 6;
-    } else {
-      cardsPerPage = 3;
-    }
 
     this.init = function() {
       changePage(1);
@@ -84,7 +96,6 @@ for (let i = 0; i < 6; i++) {
         }
       }
     }
-    console.log(cardsPerPage)
 
     let goToNextPage = () => {
       if(currentPage < numPages()) {

@@ -1011,6 +1011,10 @@ hr {
     margin-top: 10px;
   }
 }
+* {
+  caret-color: transparent;
+}
+
 @media (min-width: 1280px) {
   .center-aligned {
     width: 1200px;

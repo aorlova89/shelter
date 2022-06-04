@@ -18,9 +18,7 @@ navMenuBackground.addEventListener('click', function (event){
   expandNavBar();
 });
 
-
 let cardsContainer = document.querySelector('.cards');
-// cardsContainer.innerHTML = "";
 
 let cardsPerPage;
 let screenSize = window.screen.availWidth;
@@ -38,7 +36,6 @@ let buildCards = (index) => {
   cardsContainer.innerHTML = "";
   for (let i = 0; i < cardsPerPage; i++) {
     let card = buildCard(pets[(index + i + 8) % 8]);
-
     card.addEventListener('click', function(event){
       let id = event.target.classList.contains('card') ? event.target.id : event.target.parentNode.id;
       let pet = getPetById(id);
@@ -48,21 +45,34 @@ let buildCards = (index) => {
   }
 }
 
-buildCards(index); //on page load;
+buildCards(index);
 
 let rightButton = document.querySelector('.right-arrow');
 let leftButton = document.querySelector('.left-arrow');
 
 rightButton.addEventListener('click', function(event){
-  index += 1;
-  buildCards((index + 8) % 8);
-})
+  cardsContainer.style.transform = 'translateX(200%)';
+  cardsContainer.style.removeProperty('transition');
+  index += cardsPerPage;
+
+  setTimeout(() => {
+    buildCards((index + 8) % 8);
+    cardsContainer.style.transform = 'translateX(0%)';
+    cardsContainer.style.transition = '.5s ease-out';
+  }, 0);
+});
 
 leftButton.addEventListener('click', function(event){
+  cardsContainer.style.transform = 'translateX(-200%)';
+  cardsContainer.style.removeProperty('transition');
   if (index === 0) {
-    index = pets.length-1;
+    index = pets.length - cardsPerPage;
   } else {
-    index--;
+    index -= cardsPerPage;
   }
-  buildCards(index);
+  setTimeout(() => {
+    buildCards((index + 8) % 8);
+    cardsContainer.style.transform = 'translateX(0%)';
+    cardsContainer.style.transition = '.5s ease-out';
+  }, 0);
 })

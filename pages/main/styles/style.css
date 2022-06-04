@@ -1058,6 +1058,19 @@ hr {
     width: 35%;
   }
 }
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .our-friends {
   background: #F6F6F6;
 }
@@ -1079,12 +1092,13 @@ hr {
   align-items: center;
 }
 .our-friends-slider .cards {
+  position: relative;
+  transition: left 1s;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 92px;
 }
-
 @media (min-width: 0px) and (max-width: 767px) {
   .our-friends .our-friends-content {
     padding: 42px 10px;
@@ -1136,7 +1150,7 @@ hr {
 }
 @media (min-width: 1280px) {
   .our-friends-content {
-    padding: 80px 40px 100px 40px;
+    padding: 0 40px 100px 40px;
   }
   .our-friends-content .our-friends-slider {
     width: 100%;
@@ -1534,6 +1548,10 @@ a {
     background-size: contain;
   }
 }
+* {
+  caret-color: transparent;
+}
+
 .scroll-disabled {
   overflow: hidden;
 }
