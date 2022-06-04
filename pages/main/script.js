@@ -9,6 +9,7 @@ let getPetById = (id) => {
   return pets.filter(pet => pet.name === id);
 }
 
+
 let navMenuIcon = document.getElementById('nav-menu-icon');
 navMenuIcon.addEventListener('click', expandNavBar);
 
@@ -17,8 +18,6 @@ navMenuBackground.addEventListener('click', function (event){
   event.preventDefault();
   expandNavBar();
 });
-
-let cardsContainer = document.querySelector('.cards');
 
 let cardsPerPage;
 let screenSize = window.screen.availWidth;
@@ -31,6 +30,7 @@ if (screenSize > 1279) {
 }
 
 let index = 0;
+let cardsContainer = document.querySelector('.cards');
 
 let buildCards = (index) => {
   cardsContainer.innerHTML = "";

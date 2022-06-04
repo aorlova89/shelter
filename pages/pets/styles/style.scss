@@ -58,12 +58,16 @@
 @media (min-width: 0px) and (max-width: 767px) {
   .our-friends-content {
     padding: 42px 10px;
+
+    h3 {
+      font-size: 25px;
+    }
   }
   #sophia, #timmy, #charly, #scarlett, #freddie {
     display: none;
   }
 
-  .cards-container {
+  .cards {
     margin-top: 42px;
     display: flex;
     flex-direction: column;
@@ -94,7 +98,7 @@
     display: none;
   }
 
-  .cards-container {
+  .cards {
     display: flex;
     flex-wrap: wrap;
     padding: 0 64px 40px 64px;
@@ -107,7 +111,7 @@
     padding: 80px 0 100px 0;
   }
 
-  .cards-container {
+  .cards {
     padding: 57px 0;
     display: grid;
     gap: 20px 40px;

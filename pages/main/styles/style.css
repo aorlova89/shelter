@@ -606,11 +606,10 @@ div#Freddie .pet-img {
 @media (min-width: 0px) and (max-width: 767px) {
   .modal-close {
     top: -52px;
-    right: 0;
+    right: -32px;
   }
 
   .modal-container {
-    width: 270px;
     height: 393px;
   }
   .modal-container h3 {
@@ -629,6 +628,7 @@ div#Freddie .pet-img {
   .modal-container .popup-content h5 {
     font-size: 13px;
     margin-left: 10px;
+    margin-right: 10px;
   }
   .modal-container .popup-content li {
     margin-left: 10px;
@@ -637,10 +637,9 @@ div#Freddie .pet-img {
 @media (min-width: 768px) and (max-width: 1279px) {
   .modal-close {
     top: -52px;
-    right: 9px;
+    right: -42px;
   }
   .modal-container {
-    width: 682px;
     height: 402px;
   }
   .modal-container .popup__wrapper {
@@ -1099,6 +1098,7 @@ hr {
   justify-content: space-between;
   gap: 92px;
 }
+
 @media (min-width: 0px) and (max-width: 767px) {
   .our-friends .our-friends-content {
     padding: 42px 10px;

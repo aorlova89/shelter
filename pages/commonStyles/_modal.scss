@@ -82,12 +82,12 @@
   .modal {
     &-close {
       top: -52px;
-      right: 0;
+      right: -32px;
     }
   }
 
   .modal-container {
-    width: 270px;
+    //width: 270px;
     height: 393px;
 
     h3 {
@@ -109,6 +109,7 @@
       h5 {
         font-size: 13px;
         margin-left: 10px;
+        margin-right: 10px;
       }
 
       li {
@@ -122,11 +123,11 @@
   .modal {
     &-close {
       top: -52px;
-      right: 9px;
+      right: -42px;
     }
 
     &-container {
-      width: 682px;
+      //width: 682px;
       height: 402px;
 
       .popup__wrapper {

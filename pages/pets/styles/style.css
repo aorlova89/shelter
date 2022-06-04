@@ -751,11 +751,10 @@ a {
 @media (min-width: 0px) and (max-width: 767px) {
   .modal-close {
     top: -52px;
-    right: 0;
+    right: -32px;
   }
 
   .modal-container {
-    width: 270px;
     height: 393px;
   }
   .modal-container h3 {
@@ -774,6 +773,7 @@ a {
   .modal-container .popup-content h5 {
     font-size: 13px;
     margin-left: 10px;
+    margin-right: 10px;
   }
   .modal-container .popup-content li {
     margin-left: 10px;
@@ -782,10 +782,9 @@ a {
 @media (min-width: 768px) and (max-width: 1279px) {
   .modal-close {
     top: -52px;
-    right: 9px;
+    right: -42px;
   }
   .modal-container {
-    width: 682px;
     height: 402px;
   }
   .modal-container .popup__wrapper {
@@ -1056,12 +1055,15 @@ hr {
   .our-friends-content {
     padding: 42px 10px;
   }
+  .our-friends-content h3 {
+    font-size: 25px;
+  }
 
   #sophia, #timmy, #charly, #scarlett, #freddie {
     display: none;
   }
 
-  .cards-container {
+  .cards {
     margin-top: 42px;
     display: flex;
     flex-direction: column;
@@ -1091,7 +1093,7 @@ hr {
     display: none;
   }
 
-  .cards-container {
+  .cards {
     display: flex;
     flex-wrap: wrap;
     padding: 0 64px 40px 64px;
@@ -1103,7 +1105,7 @@ hr {
     padding: 80px 0 100px 0;
   }
 
-  .cards-container {
+  .cards {
     padding: 57px 0;
     display: grid;
     gap: 20px 40px;

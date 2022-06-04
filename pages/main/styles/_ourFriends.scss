@@ -33,17 +33,11 @@
 
   .cards {
     position: relative;
-    //transform: translateX(200%);
-    //left: 1200px;
     transition: left 1s;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 92px;
-  }
-
-  .card {
-    //transition-duration: 6s;
   }
 }
 
