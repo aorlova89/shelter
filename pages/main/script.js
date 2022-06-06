@@ -9,7 +9,6 @@ let getPetById = (id) => {
   return pets.filter(pet => pet.name === id);
 }
 
-
 let navMenuIcon = document.getElementById('nav-menu-icon');
 navMenuIcon.addEventListener('click', expandNavBar);
 
@@ -18,6 +17,13 @@ navMenuBackground.addEventListener('click', function (event){
   event.preventDefault();
   expandNavBar();
 });
+
+let navMenuLinks = document.querySelectorAll('.nav-menu-link');
+
+navMenuLinks.forEach(link => link.addEventListener('click', function (event){
+    expandNavBar();
+  })
+);
 
 let cardsPerPage;
 let screenSize = window.screen.availWidth;

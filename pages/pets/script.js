@@ -1,6 +1,13 @@
-import {buildCard, buildModal, buildBurgerMenu} from "../main/utils.js";
+import {buildCard, buildModal, buildBurgerMenu, expandNavBar} from "../main/utils.js";
 
 buildBurgerMenu();
+
+let navMenuLinks = document.querySelectorAll('.nav-menu-link');
+
+navMenuLinks.forEach(link => link.addEventListener('click', function (event){
+    expandNavBar();
+  })
+);
 
 let petsJson = await fetch('../../assets/pets.json');
 let pets = await petsJson.json();

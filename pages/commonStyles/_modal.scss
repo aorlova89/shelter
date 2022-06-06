@@ -26,13 +26,19 @@
     height: 100%;
   }
 
+  &-bg:hover ~ .modal-close {
+    background-color: colors.$color-primary-light;
+    border-color: colors.$color-primary-light;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
   &-container {
     border-radius: 10px;
     position: relative;
     color: #000000;
 
     .popup-pet-img {
-      //todo add image from js?
       background: url("/shelter/assets/images/pets-jennifer.png") no-repeat;
       background-size: cover;
     }
@@ -77,6 +83,8 @@
 .modal:hover {
   box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
+
+
 
 @media (min-width: 0px) and (max-width: 767px) {
   .modal {

@@ -32,9 +32,9 @@ let buildModal = (pet) => {
   petParasites.innerText = pet[0].parasites;
 
   event.preventDefault();
+  body.style.overflow = "hidden";
   const modal = document.querySelector('.modal');
   modal.classList.add('open');
-  body.style.overflow = "hidden";
 
   const exits = modal.querySelectorAll('.modal-exit');
   exits.forEach(function (exit) {
