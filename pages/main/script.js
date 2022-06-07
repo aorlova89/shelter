@@ -21,7 +21,9 @@ navMenuBackground.addEventListener('click', function (event){
 let navMenuLinks = document.querySelectorAll('.nav-menu-link');
 
 navMenuLinks.forEach(link => link.addEventListener('click', function (event){
+  if (screenSize < 768) {
     expandNavBar();
+  }
   })
 );
 
