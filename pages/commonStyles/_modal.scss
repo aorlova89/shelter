@@ -84,7 +84,12 @@
   box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 
-
+.modal-close-active {
+  background-color: colors.$color-primary-light;
+  border-color: colors.$color-primary-light;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
 @media (min-width: 0px) and (max-width: 767px) {
   .modal {
@@ -95,7 +100,6 @@
   }
 
   .modal-container {
-    //width: 270px;
     height: 393px;
 
     h3 {

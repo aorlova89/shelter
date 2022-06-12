@@ -609,6 +609,13 @@ div#Freddie .pet-img {
   box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 
+.modal-close-active {
+  background-color: #FDDCC4;
+  border-color: #FDDCC4;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 @media (min-width: 0px) and (max-width: 767px) {
   .modal-close {
     top: -52px;
@@ -857,6 +864,7 @@ hr {
   }
 
   .nav-menu-wrapper {
+    height: 100vh;
     background-color: #292929;
     width: 320px;
     float: right;

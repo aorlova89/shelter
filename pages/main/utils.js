@@ -44,6 +44,16 @@ let buildModal = (pet) => {
       body.style.overflow = "auto";
     });
   });
+
+  let background = modal.querySelector('.modal-bg');
+  let closeModalBtn = modal.querySelector('.modal-close');
+  background.addEventListener('mouseenter', function() {
+    closeModalBtn.classList.add('modal-close-active');
+  });
+
+  background.addEventListener('mouseleave', function() {
+    closeModalBtn.classList.remove('modal-close-active');
+  });
 }
 
 let buildCard = (pet) => {
